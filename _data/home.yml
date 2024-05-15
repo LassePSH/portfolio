@@ -1,25 +1,25 @@
 project_entries:
-  - title: Project 1
+  - title: Fractality of street networks
     url: overview-post
     desc: This is an example project, configured in _data/home.yml
 
-  - title: Project 2
+  - title: Walkability of Copenhagen 
     url: overview-post
-    desc: Projects are shown in card layout
+    desc: A multi-modal approach
+    
+  - title: Master Thesis: Explaining Successful Reddit Posts
+    url: overview-post
+    desc: Predicting Awards from Textual and Network Features
 
-  - title: Project 3
+  - title: Classifying hate-speech with mulitiSWAG
     url: overview-post
-    desc: You can control visibility from _config.yml file
-
-  - title: Project 4
-    url: overview-post
-    desc: This project uses highlight markup, configured in _data/home.yml
-    highlight: WIP
+    desc: Using a Bayesian Deep Learning approach and LLM to predict hate speech.
+    # highlight: WIP
 
   - title: Project 5
     url: overview-post
     desc: Moonwalk also has horizontal list (used in header and footer)
-    highlight: WIP
+    # highlight: WIP
 
   - title: Project 6
     url: overview-post
