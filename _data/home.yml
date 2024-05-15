@@ -1,54 +1,70 @@
+navbar_entries:
+  - title: about
+    url: about
+
+  - title: blog
+    url: blog
+
+  - title: website
+    url: https://www.abhinav.co
+
 project_entries:
-  - title: Fractality of street networks
+  - title: Project 1
     url: overview-post
     desc: This is an example project, configured in _data/home.yml
 
-  - title: Walkability of Copenhagen 
+  - title: Project 2
     url: overview-post
-    desc: A multi-modal approach
-    
-  - title: Master Thesis: Explaining Successful Reddit Posts
-    url: overview-post
-    desc: Predicting Awards from Textual and Network Features
+    desc: Projects are shown in card layout
 
-  - title: Classifying hate-speech with mulitiSWAG
+  - title: Project 3
     url: overview-post
-    desc: Using a Bayesian Deep Learning approach and LLM to predict hate speech.
-    # highlight: WIP
+    desc: You can control visibility from _config.yml file
+
+  - title: Project 4
+    url: overview-post
+    desc: This project uses highlight markup, configured in _data/home.yml
+    highlight: WIP
 
   - title: Project 5
     url: overview-post
     desc: Moonwalk also has horizontal list (used in header and footer)
-    # highlight: WIP
+    highlight: WIP
 
   - title: Project 6
     url: overview-post
     desc: It also has a scalable vertical list (in case you need it)
 
-# old_project_entries:
-#   - title: Soopr
-#     url: https://www.soopr.co
-#     desc: Delight your readers - add beautiful share and like buttons easily to your websites 
-#     highlight: NEW
+old_project_entries:
+  - title: Soopr
+    url: https://www.soopr.co
+    desc: Delight your readers - add beautiful share and like buttons easily to your websites 
+    highlight: NEW
 
-#   - title: Cookie
-#     url: https://github.com/abhinavs/cookie
-#     desc: An open source landing website with supporting pages and integrated blog
+  - title: Cookie
+    url: https://github.com/abhinavs/cookie
+    desc: An open source landing website with supporting pages and integrated blog
 
-#   - title: Moonwalk
-#     url: https://github.com/abhinavs/moonwalk
-#     desc: A fast and minimalist Jekyll blog theme with clean dark mode
+  - title: Moonwalk
+    url: https://github.com/abhinavs/moonwalk
+    desc: A fast and minimalist Jekyll blog theme with clean dark mode
 
-#   - title: Humangous
-#     url: https://www.humangous.co
-#     desc: The better people know you, the better they collaborate
+  - title: Humangous
+    url: https://www.humangous.co
+    desc: The better people know you, the better they collaborate
 
 footer_entries:
-  - title: EMAIL: LassePSH@gmail.com
-    url: LassePSH@gmail.com
+  - title: abhinav's homepage
+    url: https://www.abhinav.co
 
-  - title: LinkedIn
-    url: LassePSH@gmail.com
+  - title: twitter
+    url: https://twitter.com/abhinav
+
+  - title: github
+    url: https://github.com/abhinavs
+
+  - title: feed
+    url: feed.xml
 
 misc_entries:
   - title: this is an example vertical list
@@ -81,5 +97,3 @@ misc_entries:
 
           - title: it is easy to use, see _data/home.yml to see how to configure it.
             url: false
-
-
