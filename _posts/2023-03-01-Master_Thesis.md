@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Language Tests"
+title: "Explaining Successful Reddit Posts"
 ---
 
 ## Abstract
