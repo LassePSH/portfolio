@@ -9,7 +9,7 @@ project_entries:
     desc: Investigating the fractality of street networks with a dual graph representation of street networks
 
   - title: Walkability of Copenhagen
-    url: overview-post
+    url: copenhagen-walkability
     desc: Using network science and image models to 
 
   - title: Master Thesis Explaining Successful Reddit Posts
@@ -17,7 +17,7 @@ project_entries:
     desc: Predicting Awards from Textual and Network Features
     
   - title: Classifying hate speech with LLM and multiSWAG
-    url: overview-post
+    url: hate-speech
     desc: Using a deep ensemble bayesian approach
     # highlight: WIP
 
