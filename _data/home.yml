@@ -10,22 +10,22 @@ project_entries:
 
   - title: Walkability of Copenhagen
     url: copenhagen-walkability
-    desc: Using network science and image models to 
+    desc: Using network science and image models to understand urban walkability
 
-  - title: Master Thesis Explaining Successful Reddit Posts
+  - title: Master Thesis":" Explaining Successful Reddit Posts
     url: master-thesis
     desc: Predicting Awards from Textual and Network Features
     
-  - title: Classifying hate speech with LLM and multiSWAG
+  - title: Classifying hate speech with multiSWAG
     url: hate-speech
-    desc: Using a deep ensemble bayesian approach
+    desc: Using a deep ensemble bayesian approach to classify text as hate speech
     # highlight: WIP
 
   - title: Meme Prediction
     url: overview-post
     desc: Combining visual and textual features to classify memes
 
-  - title: Bachelor Thesis
+  - title: Bachelor Thesis":" 
     url: overview-post
     desc: Organic Solar Cell installation for Roskilde Festival
 
