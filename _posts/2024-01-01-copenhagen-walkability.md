@@ -19,9 +19,7 @@ $$Z_i = {x_i - \mu_i \over \sigma_i}$$
 The Mean and standard deviation of trips along neighboring streets $X_j$ weighted by the difference in angle between $i$ and $j$.
 
 
-$$
-w_{ij} = 1 - \frac{|\theta_i - \theta_j|}{90^\circ} 
-$$
+$$w_{ij} = 1 - \frac{|\theta_i - \theta_j|}{90^\circ}$$
 
 $$
 \mu_i = \frac{\sum_{j=1}^n w_{ij} x_j}{\sum_{j=1}^n w_{ij}} 
