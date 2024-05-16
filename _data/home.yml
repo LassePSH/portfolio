@@ -12,7 +12,7 @@ project_entries:
     url: overview-post
     desc: Using network science and image models to 
 
-  - title: Master Thesis: Explaining Successful Reddit Posts
+  - title: Master Thesis Explaining Successful Reddit Posts
     url: overview-post
     desc: Predicting Awards from Textual and Network Features
     
@@ -25,7 +25,7 @@ project_entries:
     url: overview-post
     desc: Combining visual and textual features to classify memes
 
-  - title: Bachelor Thesis:
+  - title: Bachelor Thesis
     url: overview-post
     desc: Organic Solar Cell installation for Roskilde Festival
 
