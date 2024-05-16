@@ -1,5 +1,6 @@
 ---
 layout: post
+tags: [soopr, config]
 ---
 
 Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Nunc a egestas tortor, sed feugiat leo.
@@ -23,4 +24,80 @@ Proin quis velit et eros auctor laoreet. Aenean eget nibh odio. Suspendisse moll
 ## The end
 
 Donec ex lectus, tempus non lacinia quis, pretium non ipsum. Praesent est nunc, rutrum vel tellus eu, tristique laoreet purus. In rutrum orci sit amet ex ornare, sit amet finibus lacus laoreet. Etiam ac facilisis purus, eget porttitor odio. Suspendisse tempus dolor nec risus sodales posuere. Proin dui dui, mollis a consectetur molestie, lobortis vitae tellus. Vivamus at purus sed urna sollicitudin mattis. Mauris lacinia libero in lobortis pulvinar. Nullam sit amet condimentum justo. Donec orci justo, pharetra ut dolor non, interdum finibus orci. Proin vitae ante a dui sodales commodo ac id elit. Nunc vel accumsan nunc, sit amet congue nunc. Aliquam in lacinia velit. Integer lobortis luctus eros, in fermentum metus aliquet a. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod.
+
+## Lists
+
+Unordered:
+
+- Fusce non velit cursus ligula mattis convallis vel at metus[^2].
+- Sed pharetra tellus massa, non elementum eros vulputate non.
+- Suspendisse potenti.
+
+Ordered:
+
+1. Quisque arcu felis, laoreet vel accumsan sit amet, fermentum at nunc.
+2. Sed massa quam, auctor in eros quis, porttitor tincidunt orci.
+3. Nulla convallis id sapien ornare viverra.
+4. Nam a est eget ligula pellentesque posuere.
+
+## Blockquote
+
+The following is a blockquote:
+
+> Suspendisse tempus dolor nec risus sodales posuere. Proin dui dui, mollis a consectetur molestie, lobortis vitae tellus.
+
+## Thematic breaks (<hr>)
+
+Mauris viverra dictum ultricies[^3]. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod. **You can put some text inside the horizontal rule like so.**
+
+---
+{: data-content="hr with text"}
+
+Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod. **Or you can just have an clean horizontal rule.**
+
+---
+
+Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod. Or you can just have an clean horizontal rule.
+
+## Code
+
+Now some code:
+
+```python
+import microrequests
+
+mr = microrequests.init()
+# mr is requests' session object and you can use it in similar manner
+res = mr.get("http://httpbin.org/get")
+print(res.text) 
+```
+
+
+And here is some `inline code`!
+
+## Tables
+
+Now a table:
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+## Images
+
+![theme logo](http://www.abhinavsaxena.com/images/abhinav.jpeg)
+
+This is an image[^4]
+
+---
+{: data-content="footnotes"}
+
+[^1]: this is a footnote. You should reach here if you click on the corresponding superscript number.
+[^2]: hey there, don't forget to read all the footnotes!
+[^3]: this is another footnote.
+[^4]: this is a very very long footnote to test if a very very long footnote brings some problems or not; hope that there are no problems but you know sometimes problems arise from nowhere.
 
