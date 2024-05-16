@@ -13,7 +13,7 @@ project_entries:
     desc: Using network science and image models to 
 
   - title: Master Thesis Explaining Successful Reddit Posts
-    url: Master_Thesis
+    url: master-thesis
     desc: Predicting Awards from Textual and Network Features
     
   - title: Classifying hate speech with LLM and multiSWAG
