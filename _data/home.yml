@@ -6,46 +6,34 @@ navbar_entries:
 project_entries:
   - title: Fractality of street networks
     url: overview-post
-    desc: This is an example project, configured in _data/home.yml
+    desc: Investigating the fractality of street networks with a dual graph representation of street networks
 
   - title: Walkability of Copenhagen
     url: overview-post
-    desc: Projects are shown in card layout
+    desc: Using network science and image models to 
 
   - title: Master Thesis: Explaining Successful Reddit Posts
     url: overview-post
-    desc: You can control visibility from _config.yml file
-
+    desc: Predicting Awards from Textual and Network Features
+    
   - title: Classifying hate speech with LLM and multiSWAG
     url: overview-post
-    desc: This project uses highlight markup, configured in _data/home.yml
+    desc: Using a deep ensemble bayesian approach
     # highlight: WIP
 
   - title: Meme Prediction
     url: overview-post
-    desc: Moonwalk also has horizontal list (used in header and footer)
+    desc: Combining visual and textual features to classify memes
 
-  - title: Bachelor Thesis?
+  - title: Bachelor Thesis:
     url: overview-post
-    desc: It also has a scalable vertical list (in case you need it)
+    desc: Organic Solar Cell installation for Roskilde Festival
 
 # old_project_entries:
 #   - title: Soopr
 #     url: https://www.soopr.co
 #     desc: Delight your readers - add beautiful share and like buttons easily to your websites 
 #     highlight: NEW
-
-#   - title: Cookie
-#     url: https://github.com/abhinavs/cookie
-#     desc: An open source landing website with supporting pages and integrated blog
-
-#   - title: Moonwalk
-#     url: https://github.com/abhinavs/moonwalk
-#     desc: A fast and minimalist Jekyll blog theme with clean dark mode
-
-#   - title: Humangous
-#     url: https://www.humangous.co
-#     desc: The better people know you, the better they collaborate
 
 footer_entries:
   - title: email
