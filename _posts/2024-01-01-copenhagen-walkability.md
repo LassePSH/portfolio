@@ -14,20 +14,23 @@ To measure the desirability of a street segment, we compare the number of trips 
 
 The desirability score for a given segment $i$ can be computed by the z-score.
 
-$$Z_i = {x_i - \mu_i \over \sigma_i}$$
+```math
+Z_i = {x_i - \mu_i \over \sigma_i}
+```
 
 The Mean and standard deviation of trips along neighboring streets $X_j$ weighted by the difference in angle between $i$ and $j$.
 
+```math
+w_{ij} = 1 - \frac{|\theta_i - \theta_j|}{90^\circ}
+```
 
-$$w_{ij} = 1 - \frac{|\theta_i - \theta_j|}{90^\circ}$$
-
-$$
+```math
 \mu_i = \frac{\sum_{j=1}^n w_{ij} x_j}{\sum_{j=1}^n w_{ij}} 
-$$
+```
 
-$$ 
+```math
 \sigma_i = \frac{\sqrt{\sum_{j=1}^n w_{ij} (x_j - \mu_i)^2}}{\sum_{j=1}^n w_{ij}} 
-$$
+```
 
 
 <iframe
