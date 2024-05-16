@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Language Tests"
+---
+
+## Abstract
 
 This thesis explores how the acknowledgment of individuals can be quantitively mea
 sured by exploiting the Reddit award system. The thesis primarily focuses on data from
