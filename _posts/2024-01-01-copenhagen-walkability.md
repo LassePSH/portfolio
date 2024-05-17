@@ -48,20 +48,18 @@ Using the dual representation of the street network we can extract different net
 To capture the visual qualities we used the deep learning image model Segformer fine-tuned on the CityScapes dataset to compute a vector representation of each image that describes the environmental features from a given image $$I_i$$. 
 The Segformer model outputs the density of $$18$$ different classes. 
 
-\$ \$
+/%
 
 ## Results
 Using data from the network features and enviormental features, we trained a gradient-boosting classification tree (XGBoost) to classify the desirability of a street segment.
 
 ![cm](images/walkability/confusion_matrix.png)
 
-|                | Precision | Recall  | F1-score |
-|----------------|-----------|---------|----------|
-| Not Desirable  | 0.7735    | 0.8283  | 0.8000   |
-| Desirable      | 0.8149    | 0.7572  | 0.7850   |
-|                |           |         |          |
-| accuracy       |           |         | 0.7927   |
-| macro avg      | 0.7942    | 0.7927  | 0.7925   |
-| weighted avg   | 0.7942    | 0.7927  | 0.7925   |
-
-
+|              | Precision | Recall  | F1-score |
+|--------------|-----------|---------|----------|
+| Not Desirable| 0.7735    | 0.8283  | 0.8000   |
+| Desirable    | 0.8149    | 0.7572  | 0.7850   |
+|              |           |         |          |
+| accuracy     |           |         | 0.7927   |
+| macro avg    | 0.7942    | 0.7927  | 0.7925   |
+| weighted avg | 0.7942    | 0.7927  | 0.7925   |
