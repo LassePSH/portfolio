@@ -59,7 +59,7 @@ In addition we applied street continuity, which allows the continuity of streets
 
 
 ## Enviormental Features
-To capture the visual qualities we used the deep learning image model Segformer fine-tuned on the CityScapes dataset to compute a vector representation of each image that describes the environmental features from a given image $$I_i$$. The Segformer model outputs the density of $$18$$ different classes. 
+To capture the visual qualities we used the deep learning image model Segformer[^1] fine-tuned on the CityScapes dataset to compute a vector representation of each image that describes the environmental features from a given image $$I_i$$. The Segformer model outputs the density of $$18$$ different classes. 
 
 ![segformer](images/walkability/segformer_1.png)
 
@@ -78,3 +78,9 @@ Using data from the network features and enviormental features, we trained a gra
 | accuracy     |           |         | 0.7927   |
 | macro avg    | 0.7942    | 0.7927  | 0.7925   |
 | weighted avg | 0.7942    | 0.7927  | 0.7925   |
+
+
+---
+{: data-content="footnotes"}
+
+[^1]: SegFormer: Simple and efficient design for semantic segmentation with transformers: Enze Xie , Wenhai Wang , Zhiding Yu , Anima Anandkumar, Jose M. Alvarez, Ping Luo
