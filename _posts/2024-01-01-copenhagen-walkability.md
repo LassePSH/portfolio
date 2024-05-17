@@ -53,7 +53,7 @@ The Segformer model outputs the density of $$18$$ different classes.
 ## Results
 Using data from the network features and enviormental features, we trained a gradient-boosting classification tree (XGBoost) to classify the desirability of a street segment.
 
-![cm](/images/walkability/confusion_matrix.png)
+![cm](images/walkability/confusion_matrix.png)
 
 |                | Precision | Recall  | F1-score |
 |----------------|-----------|---------|----------|
