@@ -48,7 +48,7 @@ Using the dual representation of the street network we can extract different net
 To capture the visual qualities we used the deep learning image model Segformer fine-tuned on the CityScapes dataset to compute a vector representation of each image that describes the environmental features from a given image $$I_i$$. 
 The Segformer model outputs the density of $$18$$ different classes. 
 
-/%
+$$%$$
 
 ## Results
 Using data from the network features and enviormental features, we trained a gradient-boosting classification tree (XGBoost) to classify the desirability of a street segment.
