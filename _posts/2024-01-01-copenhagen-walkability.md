@@ -62,12 +62,12 @@ To capture the visual qualities we used the deep learning image model Segformer 
 
 ![Test](images/walkability/segformer_2.png) 
 
-Each street segment contains multiple images. To get an average representation of the environmental features an average across all vector representations from the Segformer model is computed from all the images related to the street segment $$\overline{V} = \frac{{\sum_{i=1}^{n} {V}}_i}{{n}}$$.
+<!-- Each street segment contains multiple images. To get an average representation of the environmental features an average across all vector representations from the Segformer model is computed from all the images related to the street segment $$\overline{V} = \frac{{\sum_{i=1}^{n} {V}}_i}{{n}}$$. -->
 
 
 ## Results
 Using data from the network features and enviormental features, we trained a gradient-boosting classification tree (XGBoost) to classify the desirability of a street segment.
-The model obtained a macro F1 score of $$0.79$$ with a $$30 %$$ test size of $$26837$$ and a $$70 %$$ training size of $$62617$$.
+<!-- The model obtained a macro F1 score of $$0.79$$ with a $$30 %$$ test size of $$26837$$ and a $$70 %$$ training size of $$62617$$. -->
 
 ![cm](images/walkability/confusion_matrix.png) 
 
