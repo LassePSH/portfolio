@@ -60,7 +60,7 @@ Using the dual representation of the street network we can extract different net
 ## Enviormental Features
 To capture the visual qualities we used the deep learning image model Segformer fine-tuned on the CityScapes dataset to compute a vector representation of each image that describes the environmental features from a given image $$I_i$$. The Segformer model outputs the density of $$18$$ different classes. 
 
-![Test](images/walkability/segformer_2.png) 
+<!-- ![Test](images/walkability/segformer_2.png)  -->
 
 <!-- Each street segment contains multiple images. To get an average representation of the environmental features an average across all vector representations from the Segformer model is computed from all the images related to the street segment $$\overline{V} = \frac{{\sum_{i=1}^{n} {V}}_i}{{n}}$$. -->
 
