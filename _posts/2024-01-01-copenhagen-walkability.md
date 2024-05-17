@@ -20,7 +20,7 @@ Existing research has combined these elements into walkability indexes, which as
 # Walkability Index
 To measure the desirability of a street segment, we compare the number of trips passing through it against the number of trips along neighboring streets that have similar directions.
 
-The desirability score for a given segment $$i$$ can be computed by the z-score.
+The desirability score for a given segment $$i$$ can be computed by the z-score, where a postive score indicate a desirable street and a negative a non-desirable street.
 
 $$
 Z_i = {x_i - \mu_i \over \sigma_i}
@@ -48,14 +48,41 @@ $$
 
 hello
 
-![Test](images/walkability/map_desirable.png) 
+<!-- ![Test](images/walkability/map_desirable.png)  -->
 <!-- ![Test2](images/walkability/map_non_desirable.png) -->
 
 
 # The Model
 
 ## Network Features
-
+Using the dual representation of the street network we can extract different network features from the structure of the street network.
 
 ## Enviormental Features
+To capture the visual qualities we used the deep learning image model Segformer [^1] fine-tuned on the CityScapes dataset to compute a vector representation of each image that describes the environmental features from a given image $$I_i$$. The Segformer model outputs the density of $$18$$ different classes. 
+
 ![Test](images/walkability/segformer_2.png) 
+
+Each street segment contains multiple images. To get an average representation of the environmental features an average across all vector representations from the Segformer model is computed from all the images related to the street segment $$\overline{V} = \frac{{\sum_{i=1}^{n} {V}}_i}{{n}}$$.
+
+
+## Results
+Using data from the network features and enviormental features, we trained a gradient-boosting classification tree (XGBoost) to classify the desirability of a street segment.
+The model obtained a macro F1 score of $$0.79$$ with a $$30 %$$ test size of $$26837$$ and a $$70 %$$ training size of $$62617$$.
+
+![cm](images/walkability/confusion_matrix.png) 
+
+|                | Precision | Recall  | F1-score |
+|----------------|-----------|---------|----------|
+| Not Desirable  | 0.7735    | 0.8283  | 0.8000   |
+| Desirable      | 0.8149    | 0.7572  | 0.7850   |
+|                |           |         |          |
+| accuracy       |           |         | 0.7927   |
+| macro avg      | 0.7942    | 0.7927  | 0.7925   |
+| weighted avg   | 0.7942    | 0.7927  | 0.7925   |
+
+
+---
+{: data-content="footnotes"}
+
+[^1]: SegFormer: Simple and efficient design for semantic segmentation with transformers: Enze Xie , Wenhai Wang , Zhiding Yu , Anima Anandkumar, Jose M. Alvarez, Ping Luo
+
