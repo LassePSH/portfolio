@@ -46,6 +46,6 @@ test 2
 
 <p align="center">
   <img alt="Light" src="images/map_desirable.png" width="45%">
-&nbsp; &nbsp; &nbsp; &nbsp;
+<!-- &nbsp; &nbsp; &nbsp; &nbsp; -->
   <img alt="Dark" src="images/map_non_desirable.png" width="45%">
 </p>
