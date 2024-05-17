@@ -58,7 +58,7 @@ hello
 Using the dual representation of the street network we can extract different network features from the structure of the street network.
 
 ## Enviormental Features
-To capture the visual qualities we used the deep learning image model Segformer [^1] fine-tuned on the CityScapes dataset to compute a vector representation of each image that describes the environmental features from a given image $$I_i$$. The Segformer model outputs the density of $$18$$ different classes. 
+To capture the visual qualities we used the deep learning image model Segformer fine-tuned on the CityScapes dataset to compute a vector representation of each image that describes the environmental features from a given image $$I_i$$. The Segformer model outputs the density of $$18$$ different classes. 
 
 ![Test](images/walkability/segformer_2.png) 
 
@@ -69,7 +69,7 @@ To capture the visual qualities we used the deep learning image model Segformer 
 Using data from the network features and enviormental features, we trained a gradient-boosting classification tree (XGBoost) to classify the desirability of a street segment.
 <!-- The model obtained a macro F1 score of $$0.79$$ with a $$30 %$$ test size of $$26837$$ and a $$70 %$$ training size of $$62617$$. -->
 
-![cm](images/walkability/confusion_matrix.png) 
+![cm](/images/walkability/confusion_matrix.png) 
 
 |                | Precision | Recall  | F1-score |
 |----------------|-----------|---------|----------|
@@ -82,7 +82,7 @@ Using data from the network features and enviormental features, we trained a gra
 
 
 ---
-{: data-content="footnotes"}
+<!-- {: data-content="footnotes"}
 
-[^1]: SegFormer: Simple and efficient design for semantic segmentation with transformers: Enze Xie , Wenhai Wang , Zhiding Yu , Anima Anandkumar, Jose M. Alvarez, Ping Luo
+[^1]: SegFormer: Simple and efficient design for semantic segmentation with transformers: Enze Xie , Wenhai Wang , Zhiding Yu , Anima Anandkumar, Jose M. Alvarez, Ping Luo -->
 
