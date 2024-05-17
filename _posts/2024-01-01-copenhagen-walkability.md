@@ -37,3 +37,5 @@ $$
   src="https://lassepsh.github.io/walkability_map/"
   style="width:100%; height:700px;"
 ></iframe>
+
+![Test](images/map_desirable.png)
