@@ -45,9 +45,18 @@ $$
 ></iframe>
 
 # The Model
+new title?
+
 
 ## Network Features
-Using the dual representation of the street network we can extract different network features from the structure of the street network.
+In order to extract properties from the street network, we used a dual graph representation where streets are represented as nodes and intersection are edges.
+In addition we applied street continuity, which allows the continuity of streets over a plurality of edges with aiffrence in angle below a fixed threshold.
+
+
+![topo](images/walkability/topo.png)
+*Table: Construction of the street network.*
+
+
 
 ## Enviormental Features
 To capture the visual qualities we used the deep learning image model Segformer fine-tuned on the CityScapes dataset to compute a vector representation of each image that describes the environmental features from a given image $$I_i$$. The Segformer model outputs the density of $$18$$ different classes. 
