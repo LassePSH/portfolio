@@ -4,6 +4,11 @@ author: Lasse P. S. H.
 title: "Explaining Urban Walkability Through Network and Visual Features"
 ---
 
+## Table of contents
+- [Walkability Index](#walkability-index)
+- [The Model](#the-model)
+  - [Network Features](#network-features) 
+  - [Enviormental Features](#enviormental-features)
 
 # Abstract
 Understanding walking behavior in cities is critical to promoting physical activity and reducing reliance on fossil fuel-powered vehicles.
