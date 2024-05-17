@@ -7,8 +7,8 @@ title: "Explaining Urban Walkability Through Network and Visual Features"
 <!-- ## Table of contents -->
 - [Walkability Index](#walkability-index)
 - [The Model](#the-model)
-  - [Network Features](#network-features) 
-  - [Enviormental Features](#enviormental-features)
+  <!-- - [Network Features](#network-features)  -->
+  <!-- - [Enviormental Features](#enviormental-features) -->
 
 
 
@@ -65,20 +65,20 @@ To capture the visual qualities we used the deep learning image model Segformer 
 <!-- Each street segment contains multiple images. To get an average representation of the environmental features an average across all vector representations from the Segformer model is computed from all the images related to the street segment $$\overline{V} = \frac{{\sum_{i=1}^{n} {V}}_i}{{n}}$$. -->
 
 
-## Results
+<!-- ## Results -->
 Using data from the network features and enviormental features, we trained a gradient-boosting classification tree (XGBoost) to classify the desirability of a street segment.
 <!-- The model obtained a macro F1 score of $$0.79$$ with a $$30 %$$ test size of $$26837$$ and a $$70 %$$ training size of $$62617$$. -->
 
-![cm](/images/walkability/confusion_matrix.png) 
+<!-- ![cm](/images/walkability/confusion_matrix.png)  -->
 
-|                | Precision | Recall  | F1-score |
+<!-- |                | Precision | Recall  | F1-score |
 |----------------|-----------|---------|----------|
 | Not Desirable  | 0.7735    | 0.8283  | 0.8000   |
 | Desirable      | 0.8149    | 0.7572  | 0.7850   |
 |                |           |         |          |
 | accuracy       |           |         | 0.7927   |
 | macro avg      | 0.7942    | 0.7927  | 0.7925   |
-| weighted avg   | 0.7942    | 0.7927  | 0.7925   |
+| weighted avg   | 0.7942    | 0.7927  | 0.7925   | -->
 
 
 ---
