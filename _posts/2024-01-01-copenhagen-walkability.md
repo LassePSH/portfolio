@@ -5,8 +5,8 @@ title: "Explaining Urban Walkability Through Network and Visual Features"
 ---
 
 <!-- ## Table of contents -->
-- [Walkability Index](#walkability-index)
-- [The Model](#the-model)
+<!-- - [Walkability Index](#walkability-index) -->
+<!-- - [The Model](#the-model) -->
   <!-- - [Network Features](#network-features)  -->
   <!-- - [Enviormental Features](#enviormental-features) -->
 
@@ -67,7 +67,6 @@ To capture the visual qualities we used the deep learning image model Segformer 
 
 <!-- ## Results -->
 Using data from the network features and enviormental features, we trained a gradient-boosting classification tree (XGBoost) to classify the desirability of a street segment.
-<!-- The model obtained a macro F1 score of $$0.79$$ with a $$30 %$$ test size of $$26837$$ and a $$70 %$$ training size of $$62617$$. -->
 
 <!-- ![cm](/images/walkability/confusion_matrix.png)  -->
 
@@ -81,7 +80,7 @@ Using data from the network features and enviormental features, we trained a gra
 | weighted avg   | 0.7942    | 0.7927  | 0.7925   | -->
 
 
----
+<!-- --- -->
 <!-- {: data-content="footnotes"}
 
 [^1]: SegFormer: Simple and efficient design for semantic segmentation with transformers: Enze Xie , Wenhai Wang , Zhiding Yu , Anima Anandkumar, Jose M. Alvarez, Ping Luo -->
