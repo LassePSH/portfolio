@@ -54,6 +54,8 @@ To capture the visual qualities we used the deep learning image model Segformer 
 
 ![segformer](images/walkability/segformer_1.png)
 
+Each street segment contains multiple images. To get an average representation of the environmental features, an average across all vector representations from the Segformer model is computed from all the images related to the street segment:
+
 ## Results
 Using data from the network features and enviormental features, we trained a gradient-boosting classification tree (XGBoost) to classify the desirability of a street segment.
 
