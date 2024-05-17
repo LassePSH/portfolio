@@ -40,12 +40,15 @@ $$
 
 hello
 
-![Test](images/map_desirable.png) ![Test2](images/map_non_desirable.png)
+![Test](images/walkability/map_desirable.png) 
+<!-- ![Test2](images/walkability/map_non_desirable.png) -->
 
-test 2
 
-<p align="center">
-  <img alt="Light" src="images/map_desirable.png" width="45%">
-<!-- &nbsp; &nbsp; &nbsp; &nbsp; -->
-  <img alt="Dark" src="images/map_non_desirable.png" width="45%">
-</p>
+# Model
+
+## Network Features
+
+
+
+## Enviormental Features
+![Test](images/walkability/segformer_2.png) 
