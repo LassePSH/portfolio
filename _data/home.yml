@@ -1,8 +1,3 @@
-navbar_entries:
-  - title: about
-    url: about
-
-
 project_entries:
   - title: Fractality of street networks
     url: overview-post
@@ -12,7 +7,7 @@ project_entries:
     url: copenhagen-walkability
     desc: Using network science and image models to understand urban walkability
 
-  - title: Master Thesis":" Explaining Successful Reddit Posts
+  - title: Master Thesis - Explaining Successful Reddit Posts
     url: master-thesis
     desc: Predicting Awards from Textual and Network Features
     
@@ -25,7 +20,7 @@ project_entries:
     url: overview-post
     desc: Combining visual and textual features to classify memes
 
-  - title: Bachelor Thesis":" 
+  - title: Bachelor Thesis 
     url: overview-post
     desc: Organic Solar Cell installation for Roskilde Festival
 
