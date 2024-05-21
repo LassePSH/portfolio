@@ -15,7 +15,7 @@ Overall, this research provides insights into how repuation is formed and mainta
 
 
 # Predicting Awarded Reddit Posts
-The Model uses the ELECTRA transformer  model to handle the textual input, tokenizing the raw text before feeding it into the transformer. 
+The Model uses the ELECTRA transformer model to handle the textual input, tokenizing the raw text before feeding it into the transformer. 
 A dropout layer is used to prevent overfitting of the textual input before concatenating the output of the ELECTRA with the network features.
 ![theme logo](/portfolio/images/master_thesis/MasterThesisModel.png)
 
@@ -35,9 +35,18 @@ A dropout layer is used to prevent overfitting of the textual input before conca
 
 ## Individuals Identity in Communities
 
-![theme logo](/portfolio/images/master_thesis/mentions.png)
+The following section shows the result of the study we conducted on the importance of identity in communities. As stated in Section 2.1 and in the paper ”Identity Effects in Social Media” an individual’s identity is a crucial part of a user’s reputation within a com­munity. 
+For a user to have a true and accurate reputation, they must be well­known and recognizable within the community.
 
+The subreddit wallstreetbets gained widespread popularity at the end of 2020, resulting in a large influx of new members joining the community. 
+This section shows the result of the investigation conducted on how community size affects the identity of an individual.
+
+### Reciprocal edges
 ![theme logo](/portfolio/images/master_thesis/reciprocal.png)
+The total number of reciprocal edges, can be seen as a metric of how well the individual nodes are connected and how dense the community is. 
+The following figures illustrate the relation between the total number of reciprocal edges and the network size.
+
+![theme logo](/portfolio/images/master_thesis/mentions.png)
 
 ## Awards Increases Awards
 This section seeks to investigate how the probability of receiving an award increases if the user is already awarded. 
