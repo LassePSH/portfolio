@@ -18,6 +18,7 @@ These networks are a static snapshot of 10 weeks in the period before a post was
 By doing this we are able to analyze the network before a post is created and the behavior of the individual who made the post in that 10­week period.
 The data is balanced such that it contains an equal amount of awarded and not awarded posts, this is done by downsampling the majority class not awarded posts.
 <br>
+<br>
 We created a total $$56278$$ diffrent networks. 
 The following figure shows an example of a single discrete­time dynamic graph from 2020-­12-­25 to 2021-­03-­25-
 ![theme logo](/portfolio/images/master_thesis/frontpage_4.jpg)
@@ -52,13 +53,15 @@ The subreddit wallstreetbets gained widespread popularity at the end of 2020, re
 This section shows the result of the investigation conducted on how community size affects the identity of an individual.
 
 ### Reciprocal edges
-![theme logo](/portfolio/images/master_thesis/reciprocal.png)
-The total number of reciprocal edges, can be seen as a metric of how well the individual nodes are connected and how dense the community is. 
-The following figures illustrate the relation between the total number of reciprocal edges and the network size.
+Reciprocal edges are edges that go in both directions in directed networks. 
+The total number of reciprocal edges, can be seen as a metric of how well individual nodes are connected to each other and how dense the community is. 
+The following figures shows the the total number of reciprocal edges and the network size.
+![theme logo](/portfolio/images/master_thesis/mentions.png)
 
 
 ### Mentions
-![theme logo](/portfolio/images/master_thesis/mentions.png)
+Reddit uses a system where users can mention individuals in the text by writing ”/u/” followed by a username. We computed the total number of mentions, which can be used as a measure of how well users know each other within the community.
+![theme logo](/portfolio/images/master_thesis/reciprocal.png)
 
 ## Awards Increases Awards
 This section seeks to investigate how the probability of receiving an award increases if the user is already awarded. 
