@@ -27,7 +27,7 @@ The following figure shows an example of a single discrete­time dynamic graph f
 For each network we extracted 12 diffrent features explaining the behavior of the author within the network.
 
 | Feature                      | Description                                                                 |
-|------------------------------|-----------------------------------------------------------------------------|
+|-----------------|-----------------------------------------------------------------------------|
 | N edges                      | The number of edges in the graph                                            |
 | N nodes                      | The number of nodes in the graph                                            |
 | degree                       | The degree of the author                                                    |
