@@ -26,20 +26,21 @@ The following figure shows an example of a single discrete­time dynamic graph f
 
 For each network we extracted 12 diffrent features explaining the behavior of the author within the network.
 
-| Feature |'     Description     '|
-|:---	|:---------------------------------------------------------|
-| N edges 	| The number of edges in the graph 	|
-| N nodes 	| The number of nodes in the graph 	|
-| degree 	| The degree of the author 	|
-| degree centrality 	| The degree centrality of the author 	|
-| closeness centrality 	| The closeness centrality of the node 	|
-| in­degree 	| The in­degree of the author in the directed graph 	|
-| out­degree 	| The out­degree of the author in the directed graph 	|
-| Fraction of Reciprocal Edges 	| The fraction of reciprocal edges of the whole network 	|
-| N Reciprocal Edges (author) 	| The sum of reciprocal edges of the author 	|
-| N Reciprocal Edges 	| The total sum of reciprocal edges 	|
-| activity 	| The number of posts & comments in the time interval by the author 	|
-| mentions 	| The number of times the author has been mentioned in other posts & comments 	|
+| Feature | Description |
+|:--- |:---------------------------------------------------------|
+| N edges | The number of edges in the graph |
+| N nodes | The number of nodes in the graph |
+| degree | The degree of the author |
+| degree centrality | The degree centrality of the author |
+| closeness centrality | The closeness centrality of the node |
+| in­degree | The in­degree of the author in the directed graph |
+| out­degree | The out­degree of the author in the directed graph |
+| Fraction of Reciprocal Edges | The fraction of reciprocal edges of the whole network |
+| N Reciprocal Edges (author) | The sum of reciprocal edges of the author |
+| N Reciprocal Edges | The total sum of reciprocal edges |
+| activity | The number of posts & comments in the time interval by the author |
+| mentions | The number of times the author has been mentioned in other posts & comments |
+|<img width="20%"/>|<img width="80%"/>|
 
 
 
