@@ -17,6 +17,10 @@ This post shows the key results from my Master Thesis. The thesis explores how t
 
 ## Individuals Identity in Communities
 
+![theme logo](/portfolio/images/master_thesis/mentions.png)
+
+![theme logo](/portfolio/images/master_thesis/reciprocal.png)
+
 ## Awards Increases Awards
 This section seeks to investigate how the probability of receiving an award increases if
 the user is already awarded. As previously mentioned, awards are a rare commodity,
@@ -31,7 +35,7 @@ communities. We computed the percentage of awards given to the top n% awarded us
 of the awarded users. The following figure shows the cumulative rate of the total awards
 given to the top awarded users.
 
-
+![theme logo](/portfolio/images/master_thesis/getrich.png)
 
 It can be seen that the majority of awards are given to a small proportion of the awarded
 users. The top 1% awarded users have received $40 \%$ of the total awards. This suggests
