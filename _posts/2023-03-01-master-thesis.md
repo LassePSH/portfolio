@@ -26,72 +26,20 @@ The following figure shows an example of a single discrete­time dynamic graph f
 
 For each network we extracted 12 diffrent features explaining the behavior of the author within the network.
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-0pky">Feature</th>
-    <th class="tg-0pky">Description</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-0pky">N edges</td>
-    <td class="tg-0pky">The number of edges in the graph</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">N nodes</td>
-    <td class="tg-0pky">The number of nodes in the graph</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">degree</td>
-    <td class="tg-0pky">The degree of the author</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">degree centrality</td>
-    <td class="tg-0pky">The degree centrality of the author</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">closeness centrality</td>
-    <td class="tg-0pky">The closeness centrality of the node</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">in­degree</td>
-    <td class="tg-0pky">The in­degree of the author in the directed graph</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">out­degree</td>
-    <td class="tg-0pky">The out­degree of the author in the directed graph</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Fraction of Reciprocal Edges</td>
-    <td class="tg-0pky">The fraction of reciprocal edges of the whole network</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">N Reciprocal Edges (author)</td>
-    <td class="tg-0pky">The sum of reciprocal edges of the author</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">N Reciprocal Edges</td>
-    <td class="tg-0pky">The total sum of reciprocal edges</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">activity</td>
-    <td class="tg-0pky">The number of posts &amp;amp; comments in the time interval by the author</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">mentions</td>
-    <td class="tg-0pky">The number of times the author has been mentioned in other posts &amp;amp; comments</td>
-  </tr>
-</tbody>
-</table>
+| Feature | Description |
+|:--- |:---------------------------------------------------------|
+| N edges | The number of edges in the graph |
+| N nodes | The number of nodes in the graph |
+| degree | The degree of the author |
+| degree centrality | The degree centrality of the author |
+| closeness centrality | The closeness centrality of the node |
+| in­degree | The in­degree of the author in the directed graph |
+| out­degree | The out­degree of the author in the directed graph |
+| Fraction of Reciprocal Edges | The fraction of reciprocal edges of the whole network |
+| N Reciprocal Edges (author) | The sum of reciprocal edges of the author |
+| N Reciprocal Edges | The total sum of reciprocal edges |
+| activity | The number of posts & comments in the time interval by the author |
+| mentions | The number of times the author has been mentioned in other posts & comments |
 
 
 

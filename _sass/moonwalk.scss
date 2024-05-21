@@ -37,11 +37,17 @@ li { margin: 0.4em 0; }
   padding: 4em 2em;
 }
 
-table, th, td {
+table {
   width: 100%;
   border: thin solid black;
   border-collapse: collapse;
+  table-layout: fixed; /* Ensure all columns are the same size */
+}
+
+th, td {
+  border: thin solid black;
   padding: 0.4em;
+}
 
 div.highlighter-rouge pre code, pre code.highlighter-rouge {
   display: block;
