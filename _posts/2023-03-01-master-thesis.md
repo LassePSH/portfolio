@@ -11,6 +11,9 @@ Finally, we explained some of the underlying social mechanisms within the commun
 We also investigate the impact of the network size on individuals’ identity within the community, revealing that larger networks have different social dynamics, making it more challenging for individuals to establish identity. 
 Overall, this research provides insights into how repuation is formed and maintained within online communities and the factors that contribute to it.
 
+# Constructing the Network
+
+![theme logo](/portfolio/images/master_thesis/fronpage_4.jpg)
 
 
 
