@@ -14,14 +14,31 @@ Overall, this research provides insights into how repuation is formed and mainta
 # Constructing the Network(s)
 We created discrete­time dynamic networks for wallstreetbets. Where every unique author is represented as a node in the graph.
 An edge is created between the two nodes if they interact by commenting on a post or comment. 
-These networks are a static snapshot of 10 weeks in the period before a post was created, this creates a networkfor each individual post. 
-By doing this we are able to analyze the network before a post is created and the behavior of the individual who made the post in that 10­week period.
-The data is balanced such that it contains an equal amount of awarded and not awarded posts, this is done by downsampling the majority class not awarded posts.
+These networks are a static snapshot of 10 weeks in the period before a post was created, this creates a network for each individual post. 
+By doing this we are able to analyze the network before a post is created and the behavior of the individual who made the post in that 10­ week period.
+The data is balanced such that it contains an equal amount of awarded and not awarded posts, this is done by down sampling the majority class not awarded posts.
 <br>
 <br>
 We created a total $$56278$$ diffrent networks. 
-The following figure shows an example of a single discrete­time dynamic graph from 2020-­12-­25 to 2021-­03-­25-
+The following figure shows an example of a single discrete­time dynamic graph from 2020-­12-­25 to 2021-­03-­25.
 ![theme logo](/portfolio/images/master_thesis/frontpage_4.jpg)
+
+For each network we extracted 12 diffrent features explaining the behavior of the author within the network.
+
+| Feature                      | Description                                                                 |
+|------------------------------|-----------------------------------------------------------------------------|
+| N edges                      | The number of edges in the graph                                            |
+| N nodes                      | The number of nodes in the graph                                            |
+| degree                       | The degree of the author                                                    |
+| degree centrality            | The degree centrality of the author                                         |
+| closeness centrality         | The closeness centrality of the node                                        |
+| in­degree                     | The in­degree of the author in the directed graph                            |
+| out­degree                    | The out­degree of the author in the directed graph                           |
+| Fraction of Reciprocal Edges | The fraction of reciprocal edges of the whole network                       |
+| N Reciprocal Edges (author)  | The sum of reciprocal edges of the author                                   |
+| N Reciprocal Edges           | The total sum of reciprocal edges                                           |
+| activity                     | The number of posts & comments in the time interval by the author           |
+| mentions                     | The number of times the author has been mentioned in other posts & comments |
 
 
 
@@ -43,6 +60,7 @@ A dropout layer is used to prevent overfitting of the textual input before conca
 
 
 # Key Findings
+
 
 ## Individuals Identity in Communities
 
