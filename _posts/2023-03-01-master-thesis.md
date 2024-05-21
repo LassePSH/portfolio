@@ -58,28 +58,6 @@ A dropout layer is used to prevent overfitting of the textual input before conca
 | macro avg      |  0.7857   | 0.7810  |   0.7810    |
 | weighted avg   |  0.7852   | 0.7822  |   0.7813    |
 
-<style>
-table th:first-of-type {
-    width: 10%;
-}
-table th:nth-of-type(2) {
-    width: 10%;
-}
-table th:nth-of-type(3) {
-    width: 50%;
-}
-table th:nth-of-type(4) {
-    width: 30%;
-}
-</style>
-
-
-+---------+---------+---------+----------+
-| Header1 | header2 | header3 | header4  |
-+---------+---------+---------+----------+
-| Bar     | bar     | bar     | bar      |
-+---------+---------+---------+----------+
-
 
 
 # Key Findings
