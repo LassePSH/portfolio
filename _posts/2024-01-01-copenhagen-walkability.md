@@ -6,7 +6,7 @@ title: "Explaining Urban Walkability Through Network and Visual Features"
 
 ## Table of contents
 - [Walkability Index](#walkability-index)
-- [The Model](#the-model)
+- [Explaining Walkability](#explaining-walkability)
   - [Network Features](#network-features) 
   - [Enviormental Features](#enviormental-features)
 
@@ -44,9 +44,8 @@ $$
   style="width:100%; height:700px;"
 ></iframe>
 
-# The Model
-new title?
-
+# Explaining Walkability
+The individuals' experience of moving through the city is a combination of many different factors and is a combination of both micro-level and macro-level features. In order to understand walking behavior of individuals it is important to consider both the network structure of the city and the enviormental features.
 
 ## Network Features
 In order to extract properties from the street network, we used a dual graph representation where streets are represented as nodes and intersection are edges.
@@ -65,8 +64,9 @@ To capture the visual qualities we used the deep learning image model Segformer[
 
 Each street segment contains multiple images. To get an average representation of the environmental features, an average across all vector representations from the Segformer model is computed from all the images related to the street segment:
 
-## Results
-Using data from the network features and enviormental features, we trained a gradient-boosting classification tree (XGBoost) to classify the desirability of a street segment.
+# Predicting Street desirability
+To investigate the desirability of street segments, we trained a gradient-boosting classification tree (XGBoost) using tabular data from the image vector representation and features from the street network to understand the factors that capture street desirability.
+The model obtained a macro F1 score of $$0.79$$ with a $$30%$$ test size of $$26837$$ and a $$70%$$ training size of $$62617$$. The following figure shows the confusion matrix of the classification model.
 
 ![cm](images/walkability/confusion_matrix.png)
 
@@ -78,7 +78,7 @@ Using data from the network features and enviormental features, we trained a gra
 | accuracy     |           |         | 0.7927   |
 | macro avg    | 0.7942    | 0.7927  | 0.7925   |
 | weighted avg | 0.7942    | 0.7927  | 0.7925   |
-
+*Table: Performance metrics*
 
 ---
 {: data-content="footnotes"}
