@@ -26,6 +26,7 @@ The following figure shows an example of a single discrete­time dynamic graph f
 
 For each network we extracted 12 diffrent features explaining the behavior of the author within the network.
 
+
 | Feature | Description |
 |:--- |:---------------------------------------------------------|
 | N edges | The number of edges in the graph |
@@ -64,10 +65,10 @@ A dropout layer is used to prevent overfitting of the textual input before conca
 
 
 ## Individuals Identity in Communities
-
-The following section shows the result of the study we conducted on the importance of identity in communities. ....... an individual’s identity is a crucial part of a user’s reputation within a com­munity. 
+The following section shows the result of the study we conducted on the importance of identity in communities. 
+Existing litterature sugest that individual’s identity is a crucial part of a user’s reputation within a com­munity. 
 For a user to have a true and accurate reputation, they must be well­known and recognizable within the community.
-
+<br>
 The subreddit wallstreetbets gained widespread popularity at the end of 2020, resulting in a large influx of new members joining the community. 
 This section shows the result of the investigation conducted on how community size affects the identity of an individual.
 
@@ -81,6 +82,13 @@ The following figures shows the the total number of reciprocal edges and the net
 ### Mentions
 Reddit uses a system where users can mention individuals in the text by writing ”/u/” followed by a username. We computed the total number of mentions, which can be used as a measure of how well users know each other within the community.
 ![theme logo](/portfolio/images/master_thesis/reciprocal.png)
+
+<br>
+<br>
+It can be seen for both the number of reciprocal edges and mentions there is a phaseshift around $$200000$$ nodes. 
+Which indicate that it is harder to form stronger connections in bigger networks. 
+It may be that in smaller networks, individuals are more likely to form connections with others who have similar interests or goals, while in larger networks, connections may be driven more by convenience or proximity.
+
 
 ## Awards Increases Awards
 This section seeks to investigate how the probability of receiving an award increases if the user is already awarded. 
