@@ -70,7 +70,7 @@ The model obtained a macro F1 score of $$0.79$$ with a $$30 \%$$ test size of $$
 
 ![cm](images/walkability/confusion_matrix.png)
 
-|              | Precision | Recall  | F1-score |math
+|              | Precision | Recall  | F1-score |
 |--------------|-----------|---------|----------|
 | Not Desirable| 0.7735    | 0.8283  | 0.8000   |
 | Desirable    | 0.8149    | 0.7572  | 0.7850   |
