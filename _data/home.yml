@@ -16,13 +16,13 @@ project_entries:
     desc: Using a deep ensemble bayesian approach to classify text as hate speech
     # highlight: WIP
 
-  - title: Meme Prediction
-    url: overview-post
-    desc: Combining visual and textual features to classify memes
+  # - title: Meme Prediction
+  #   url: overview-post
+  #   desc: Combining visual and textual features to classify memes
 
-  - title: Bachelor Thesis 
-    url: overview-post
-    desc: Organic Solar Cell installation for Roskilde Festival
+  # - title: Bachelor Thesis 
+  #   url: overview-post
+  #   desc: Organic Solar Cell installation for Roskilde Festival
 
 # old_project_entries:
 #   - title: Soopr
