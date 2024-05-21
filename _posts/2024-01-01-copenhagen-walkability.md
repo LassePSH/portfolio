@@ -66,7 +66,7 @@ Each street segment contains multiple images. To get an average representation o
 
 # Predicting Street desirability
 To investigate the desirability of street segments, we trained a gradient-boosting classification tree (XGBoost) using tabular data from the image vector representation and features from the street network to understand the factors that capture street desirability.
-The model obtained a macro F1 score of $$0.79$$ with a $$30%$$ test size of $$26837$$ and a $$70%$$ training size of $$62617$$. The following figure shows the confusion matrix of the classification model.
+The model obtained a macro F1 score of $$0.79$$ with a $$30 %$$ test size of $$26837$$ and a $$70 %$$ training size of $$62617$$. The following figure shows the confusion matrix of the classification model.
 
 ![cm](images/walkability/confusion_matrix.png)
 
@@ -78,6 +78,7 @@ The model obtained a macro F1 score of $$0.79$$ with a $$30%$$ test size of $$26
 | accuracy     |           |         | 0.7927   |
 | macro avg    | 0.7942    | 0.7927  | 0.7925   |
 | weighted avg | 0.7942    | 0.7927  | 0.7925   |
+
 *Table: Performance metrics*
 
 ---

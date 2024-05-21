@@ -12,7 +12,7 @@ Subsequently, this distribution serves as a basis for sampling new weights, ther
 
 Given the sheer volume of weights involved, the computation of the covariance matrix often occurs in a continuous stream, with each SGD iterate contributing incrementally to its construction. This iterative process ensures a comprehensive representation of uncertainty throughout the training trajectory, facilitating robust exploration and refinement within the weight space.
 
-The following figure shows an example of $300$ samples of 2 weights in the last dense layer in the model.
+The following figure shows an example of $$300$$ samples of 2 weights in the last dense layer in the model.
 
 
 ### multiSWAG
