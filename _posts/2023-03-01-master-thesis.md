@@ -26,7 +26,7 @@ The following figure shows an example of a single discrete­time dynamic graph f
 
 For each network we extracted 12 diffrent features explaining the behavior of the author within the network.
 
-| Feature | Description |
+| Feature &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;| Description |
 |:--- |:---------------------------------------------------------|
 | N edges | The number of edges in the graph |
 | N nodes | The number of nodes in the graph |
@@ -40,7 +40,6 @@ For each network we extracted 12 diffrent features explaining the behavior of th
 | N Reciprocal Edges | The total sum of reciprocal edges |
 | activity | The number of posts & comments in the time interval by the author |
 | mentions | The number of times the author has been mentioned in other posts & comments |
-|<img width="20%"/>|<img width="80%"/>|
 
 
 
