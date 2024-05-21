@@ -11,8 +11,9 @@ Finally, we explained some of the underlying social mechanisms within the commun
 We also investigate the impact of the network size on individuals’ identity within the community, revealing that larger networks have different social dynamics, making it more challenging for individuals to establish identity. 
 Overall, this research provides insights into how repuation is formed and maintained within online communities and the factors that contribute to it.
 
-# Constructing the Network
-We created discrete­time dynamic networks for wallstreetbets. 
+# Constructing the Network(s)
+We created discrete­time dynamic networks for wallstreetbets. Where every unique author is represented as a node in the graph.
+An edge is created between the two nodes if they interact by commenting on a post or comment. 
 These networks are a static snapshot of 10 weeks in the period before a post was created, this creates a networkfor each individual post. 
 By doing this we are able to analyze the network before a post is created and the behavior of the individual who made the post in that 10­week period.
 The data is balanced such that it contains an equal amount of awarded and not awarded posts, this is done by downsampling the majority class not awarded posts.
@@ -44,7 +45,7 @@ A dropout layer is used to prevent overfitting of the textual input before conca
 
 ## Individuals Identity in Communities
 
-The following section shows the result of the study we conducted on the importance of identity in communities. As stated in Section 2.1 and in the paper ”Identity Effects in Social Media” an individual’s identity is a crucial part of a user’s reputation within a com­munity. 
+The following section shows the result of the study we conducted on the importance of identity in communities. ....... an individual’s identity is a crucial part of a user’s reputation within a com­munity. 
 For a user to have a true and accurate reputation, they must be well­known and recognizable within the community.
 
 The subreddit wallstreetbets gained widespread popularity at the end of 2020, resulting in a large influx of new members joining the community. 
@@ -55,6 +56,8 @@ This section shows the result of the investigation conducted on how community si
 The total number of reciprocal edges, can be seen as a metric of how well the individual nodes are connected and how dense the community is. 
 The following figures illustrate the relation between the total number of reciprocal edges and the network size.
 
+
+### Mentions
 ![theme logo](/portfolio/images/master_thesis/mentions.png)
 
 ## Awards Increases Awards
