@@ -1,26 +1,24 @@
 ---
 layout: post
 author: Lasse P. S. H.
-title: Classifying hate speech with LLM and multi-SWAG
+title: Classifying hate speech with LLM and multiSWAG
 tags: [LLM, SWAG]
 ---
 
-In 2017 the Danish Institute for Human Rights did an investigation that shows, that $$15 \%$$ of all comments in the Danish online public debate were defined as hate speech. 
-Hate speech is defined as abusive or threatening speech against a particular group. 
-It is defined by the Cambridge Dictionary as: 
-> public speech that expresses hate or encourages violence towards a person or group based on something such as race, religion, sex, or sexual orientation. 
+In 2017, the Danish Institute for Human Rights conducted an investigation revealing that $$15 \%$$ of all comments in the Danish online public debate were classified as hate speech. 
+Hate speech is defined as abusive or threatening speech directed against a particular group. 
+According to the Cambridge Dictionary, it is:
 
-The public debate is an important part of our society and democracy as we know it. 
-It is therefore essential for the freedom of speech when debating online to keep a proper tone when expressing your political beliefs. 
-Natural language processing (NLP) can be used to classify hateful comments on social media. 
-Many social media are already using algorithms for detecting and flagging hateful comments. This is primarily done in English. 
+> public speech that expresses hate or encourages violence towards a person or group based on something such as race, religion, sex, or sexual orientation.
 
-Analyse & Tal F.M.B.A created an algorithm in 2021 for detecting hate speech in Danish using a Danish version of the pre-trained NLP transformer Electra called Ælectra. 
-They obtained a macro average F1 score of $$0.8341$$. The data is from Analyse & Tal and contains  $$67188$$ pieces of annotated texts. The text pieces are obtained through comment threads on public Facebook pages and groups.
+Public debate is a crucial component of our society and democracy. 
+Therefore, it is essential to maintain a respectful tone when expressing political beliefs online to safeguard freedom of speech. 
+Natural Language Processing (NLP) can be utilized to identify and classify hateful comments on social media.
 <br>
-This report will investigate if the model can be further improved by using Stochastic Weight Averaging Gaussian (SWAG) which computes the Gaussian distribution of the stochastic gradient descent (SGD) iterates. Furthermore multi-SWAG a deep ensemble extension of SWAG is also investigated. 
-Due to limitations in this course, only $$6000$$ of the text pieces were used in this project. 
-The data have been split into $$60 \%$$, $$30 \%$$ and $$10 \%$$ for training, testing and validation. 
+<br>
+This project explores how a Stochastic Weight Averaging Gaussian (SWAG) approach can further enhance the performance of the ELECTRA language model [^3]. 
+The model is trained on $$6000$$ annotated text pieces collected from comment threads on public Facebook pages and groups.
+
 
 ## SWAG
 Stochastic Weight Averaging Gaussian (SWAG) emerged as a pioneering method for uncertainty representation in 2019 [^1]. The approach involves a multi-step process wherein an initial model undergoes training, followed by further refinement using a Stochastic Gradient Descent (SGD) optimizer. During this training phase, crucial information about the weights at each step along the trajectory is meticulously preserved. This meticulous record-keeping allows for the computation of covariance, wherein an approximate distribution over the weights is established based on the SGD iterates.
@@ -43,6 +41,7 @@ The following Figure shows SWAG samples from the dense layer from 15 individual 
 
 # The Model
 The model uses a pretranined-ELECTRA basemodel and a single dense layer with dropout and a prediction layer followed by a softmax function.
+The data have been split into $$60 \%$$, $$30 \%$$ and $$10 \%$$ for training, testing and validation. 
 
 ## Training
 The following Figure shows the training histories for 15 ensembles using the multiSWAG approach. 
@@ -67,3 +66,4 @@ The results shows that multiSWAG increases the performance of the base model.
 {: data-content="footnotes"}
 [^1]: A Simple Baseline for Bayesian Uncertainty in Deep Learning: Wesley J. Maddox, Timur Garipov, Pavel Izmailov, Dmitry Vetrov, Andrew Gordon Wilson
 [^2]: Bayesian Deep Learning and a Probabilistic Perspective of Generalization: Andrew Gordon, Wilson Pavel Izmailov
+[^3]: ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators: Kevin Clark, Minh-Thang Luong, Quoc V. Le, Christopher D. Manning
