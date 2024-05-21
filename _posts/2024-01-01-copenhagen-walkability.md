@@ -74,7 +74,6 @@ The model obtained a macro F1 score of $$0.79$$ with a $$30 \%$$ test size of $$
 |--------------|-----------|---------|----------|
 | Not Desirable| 0.7735    | 0.8283  | 0.8000   |
 | Desirable    | 0.8149    | 0.7572  | 0.7850   |
-|              |           |         |          |
 | accuracy     |           |         | 0.7927   |
 | macro avg    | 0.7942    | 0.7927  | 0.7925   |
 | weighted avg | 0.7942    | 0.7927  | 0.7925   |

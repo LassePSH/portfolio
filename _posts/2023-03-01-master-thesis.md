@@ -21,13 +21,13 @@ A dropout layer is used to prevent overfitting of the textual input before conca
 
 ![theme logo](/portfolio/images/master_thesis/confusion_matrix.png)
 
-|              | Precision | Recall  | F1-score |
-|--------------|-----------|---------|----------|
-| not awarded  | 0.8130    | 0.7217  | 0.7217   |
-| awarded      | 0.7583    | 0.8403  | 0.7647   |
-| accuracy     |           |         | 0.7821   |
-| macro avg    | 0.7857    | 0.7810  | 0.7810   |
-| weighted avg | 0.7852    | 0.7822  | 0.7813   |
+|                | Precision | Recall  | F1-score |
+|----------------|:---------:|:-------:|:--------:|
+| not awarded    |  0.8130   | 0.7217  |  0.7217  |
+| awarded        |  0.7583   | 0.8403  |  0.7647  |
+| accuracy       |           |         |  0.7821  |
+| macro avg      |  0.7857   | 0.7810  |  0.7810  |
+| weighted avg   |  0.7852   | 0.7822  |  0.7813  |
 
 
 
