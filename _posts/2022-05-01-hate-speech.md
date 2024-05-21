@@ -9,6 +9,7 @@ In 2017 the Danish Institute for Human Rights did an investigation that shows, t
 Hate speech is defined as abusive or threatening speech against a particular group. 
 It is defined by the Cambridge Dictionary as: 
 > public speech that expresses hate or encourages violence towards a person or group based on something such as race, religion, sex, or sexual orientation. 
+
 The public debate is an important part of our society and democracy as we know it. 
 It is therefore essential for the freedom of speech when debating online to keep a proper tone when expressing your political beliefs. 
 Natural language processing (NLP) can be used to classify hateful comments on social media. 
@@ -16,10 +17,10 @@ Many social media are already using algorithms for detecting and flagging hatefu
 
 Analyse & Tal F.M.B.A created an algorithm in 2021 for detecting hate speech in Danish using a Danish version of the pre-trained NLP transformer Electra called Ælectra. 
 They obtained a macro average F1 score of $$0.8341$$. The data is from Analyse & Tal and contains  $$67188$$ pieces of annotated texts. The text pieces are obtained through comment threads on public Facebook pages and groups.
-
 <br>
-<br>
-This report will investigate if the model can be further improved by using Stochastic Weight Averaging Gaussian (SWAG) which computes the Gaussian distribution of the stochastic gradient descent (SGD) iterates. Furthermore multi-SWAG a deep ensemble extension of SWAG is also investigated. Due to limitations in this course, only $$6000$$ of the text pieces were used in this project. The data have been split into $$60 \%$$, $$30 \%$$ and $$10 \%$$  for training, testing and validation. 
+This report will investigate if the model can be further improved by using Stochastic Weight Averaging Gaussian (SWAG) which computes the Gaussian distribution of the stochastic gradient descent (SGD) iterates. Furthermore multi-SWAG a deep ensemble extension of SWAG is also investigated. 
+Due to limitations in this course, only $$6000$$ of the text pieces were used in this project. 
+The data have been split into $$60 \%$$, $$30 \%$$ and $$10 \%$$ for training, testing and validation. 
 
 ## SWAG
 Stochastic Weight Averaging Gaussian (SWAG) emerged as a pioneering method for uncertainty representation in 2019 [^1]. The approach involves a multi-step process wherein an initial model undergoes training, followed by further refinement using a Stochastic Gradient Descent (SGD) optimizer. During this training phase, crucial information about the weights at each step along the trajectory is meticulously preserved. This meticulous record-keeping allows for the computation of covariance, wherein an approximate distribution over the weights is established based on the SGD iterates.
