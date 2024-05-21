@@ -12,8 +12,14 @@ We also investigate the impact of the network size on individuals’ identity wi
 Overall, this research provides insights into how repuation is formed and maintained within online communities and the factors that contribute to it.
 
 # Constructing the Network
-
-![theme logo](/portfolio/images/master_thesis/fronpage_4.jpg)
+We created discrete­time dynamic networks for wallstreetbets. 
+These networks are a static snapshot of 10 weeks in the period before a post was created, this creates a networkfor each individual post. 
+By doing this we are able to analyze the network before a post is created and the behavior of the individual who made the post in that 10­week period.
+The data is balanced such that it contains an equal amount of awarded and not awarded posts, this is done by downsampling the majority class not awarded posts.
+<br>
+We created a total $$56278$$ diffrent networks. 
+The following figure shows an example of a single discrete­time dynamic graph from 2020-­12-­25 to 2021-­03-­25-
+![theme logo](/portfolio/images/master_thesis/frontpage_4.jpg)
 
 
 
