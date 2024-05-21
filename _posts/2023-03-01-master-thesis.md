@@ -26,7 +26,7 @@ The following figure shows an example of a single discrete­time dynamic graph f
 
 For each network we extracted 12 diffrent features explaining the behavior of the author within the network.
 
-| Feature | Description &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; |
+| Feature | Description |
 |:--- |:---------------------------------------------------------|
 | N edges | The number of edges in the graph |
 | N nodes | The number of nodes in the graph |
@@ -57,6 +57,28 @@ A dropout layer is used to prevent overfitting of the textual input before conca
 | accuracy       |           |         |   0.7821    |
 | macro avg      |  0.7857   | 0.7810  |   0.7810    |
 | weighted avg   |  0.7852   | 0.7822  |   0.7813    |
+
+<style>
+table th:first-of-type {
+    width: 10%;
+}
+table th:nth-of-type(2) {
+    width: 10%;
+}
+table th:nth-of-type(3) {
+    width: 50%;
+}
+table th:nth-of-type(4) {
+    width: 30%;
+}
+</style>
+
+
++---------+---------+---------+----------+
+| Header1 | header2 | header3 | header4  |
++---------+---------+---------+----------+
+| Bar     | bar     | bar     | bar      |
++---------+---------+---------+----------+
 
 
 
