@@ -14,14 +14,15 @@ Given the sheer volume of weights involved, the computation of the covariance ma
 
 The following figure shows an example of $$300$$ samples of 2 weights in the last dense layer in the model.
 
+![swag](/portfolio/images/swag/swag.png)
 
 ### multiSWAG
-MultiSWAG is a deep ensemble extension of SWAG. Ensemble learning combines several individual models to obtain better generalization performance. By using MultiSWAG more of the weight-space is investigated. The following Figure shows SWAG samples from the dense layer from 15 individual Electra models. 
+MultiSWAG is a deep ensemble extension of SWAG [1]. Ensemble learning combines several individual models to obtain better generalization performance. By using MultiSWAG more of the weight-space is investigated. The following Figure shows SWAG samples from the dense layer from 15 individual Electra models. 
 
-
+![multi_swag_samples](/portfolio/images/swag/samples.png)
 
 # Results
-
+The results shows that multiSWAG increases the performance of the base model.
 
 |             | Precision | Recall | F1     |
 |-------------|-----------|--------|--------|
@@ -32,3 +33,8 @@ MultiSWAG is a deep ensemble extension of SWAG. Ensemble learning combines sever
 *Table: Model macro averages.*
 
 
+
+---
+{: data-content="footnotes"}
+
+[^1]: Bayesian Deep Learning and a Probabilistic Perspective of Generalization: Andrew Gordon, Wilson Pavel Izmailov
