@@ -51,7 +51,41 @@ The individuals' experience of moving through the city is a combination of many 
 In order to extract properties from the street network, we used a dual graph representation where streets are represented as nodes and intersection are edges.
 In addition we applied street continuity, which allows the continuity of streets over a plurality of edges with a fiffrence in angle below a fixed threshold.
 
-![topo](images/walkability/segments.png)
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .thumbnail {
+            width: 20%;
+            display: inline-block;
+        }
+        #main_pic {
+            width: 80%; /* Adjust this value to make the first picture smaller or larger */
+        }
+    </style>
+</head>
+<body>
+    <p align="center"> 
+        <img src="images/walkability/segments.png" id="main_pic">
+    </p>
+
+    <p align="center"> 
+        <img src="images/walkability/segments.png" 
+             onmouseover="document.getElementById('main_pic').src='images/walkability/segments.png';"
+             onmouseout="document.getElementById('main_pic').src='images/walkability/segments.png';"
+             class="thumbnail">
+        <img src="images/walkability/dual.png"
+             onmouseover="document.getElementById('main_pic').src='images/walkability/dual.png';"
+             onmouseout="document.getElementById('main_pic').src='images/walkability/segments.png';"
+             class="thumbnail">
+        <img src="images/walkability/dual_conti.png" 
+             onmouseover="document.getElementById('main_pic').src='images/walkability/dual_conti.png';"
+             onmouseout="document.getElementById('main_pic').src='images/walkability/segments.png';"
+             class="thumbnail">
+    </p>
+</body>
+</html>
 
 
 *Table: Construction of the street network.*
@@ -78,42 +112,6 @@ The model obtained a macro F1 score of $$0.79$$ with a $$30 \%$$ test size of $$
 | weighted avg | 0.7942    | 0.7927  | 0.7925   |
 
 *Table: Performance metrics*
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .thumbnail {
-            width: 20%;
-            display: inline-block;
-        }
-    </style>
-</head>
-<body>
-    <p align="center"> 
-        <img src="images/walkability/segments.png" id="main_pic">
-    </p>
-
-    <p align="center"> 
-        <img src="images/walkability/segments.png" 
-             onmouseover="document.getElementById('main_pic').src='images/walkability/segments.png';"
-             onmouseout="document.getElementById('main_pic').src='images/walkability/segments.png';"
-             class="thumbnail">
-        <img src="images/walkability/dual.png"
-             onmouseover="document.getElementById('main_pic').src='images/walkability/dual.png';"
-             onmouseout="document.getElementById('main_pic').src='images/walkability/segments.png';"
-             class="thumbnail">
-        <img src="images/walkability/dual_conti.png" 
-             onmouseover="document.getElementById('main_pic').src='images/walkability/dual_conti.png';"
-             onmouseout="document.getElementById('main_pic').src='images/walkability/segments.png';"
-             class="thumbnail">
-    </p>
-</body>
-</html>
-
 
 
 ---
