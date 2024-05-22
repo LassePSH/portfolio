@@ -57,6 +57,7 @@ The following figure shows an example of the three stages, the street segments, 
         .thumbnail {
             width: 20%;
             display: inline-block;
+            cursor: pointer; /* Add cursor pointer for better UX */
         }
         #main_pic {
             width: 80%; /* Adjust this value to make the first picture smaller or larger */
@@ -101,7 +102,7 @@ To capture the enviormental qualities we used the deep learning image model Segf
             display: inline-block;
             cursor: pointer; /* Add cursor pointer for better UX */
         }
-        #main_pic {
+        #main_pic_seg {
             width: 100%; 
         }
         .center {
@@ -111,21 +112,21 @@ To capture the enviormental qualities we used the deep learning image model Segf
 </head>
 <body>
     <div class="center"> 
-        <img src="images/walkability/segformer/segformer1_seg.png" id="main_pic">
+        <img src="images/walkability/segformer/segformer1_seg.png" id="main_pic_seg">
     </div>
 
     <div class="center"> 
         <img src="images/walkability/segformer/segformer1_org.png" 
-             onmouseover="document.getElementById('main_pic').src='images/walkability/segformer/segformer1_seg.png';"
-             onmouseout="document.getElementById('main_pic').src='images/walkability/segformer/segformer1_seg.png';"
+             onmouseover="document.getElementById('main_pic_seg').src='images/walkability/segformer/segformer1_seg.png';"
+             onmouseout="document.getElementById('main_pic_seg').src='images/walkability/segformer/segformer1_seg.png';"
              class="thumbnail2">
         <img src="images/walkability/segformer/segformer2_org.png" 
-             onmouseover="document.getElementById('main_pic').src='images/walkability/segformer/segformer2_seg.png';"
-             onmouseout="document.getElementById('main_pic').src='images/walkability/segformer/segformer1_seg.png';"
+             onmouseover="document.getElementById('main_pic_seg').src='images/walkability/segformer/segformer2_seg.png';"
+             onmouseout="document.getElementById('main_pic_seg').src='images/walkability/segformer/segformer2_seg.png';"
              class="thumbnail2">
         <img src="images/walkability/segformer/segformer3_org.png" 
-             onmouseover="document.getElementById('main_pic').src='images/walkability/segformer/segformer3_seg.png';"
-             onmouseout="document.getElementById('main_pic').src='images/walkability/segformer/segformer1_seg.png';"
+             onmouseover="document.getElementById('main_pic_seg').src='images/walkability/segformer/segformer3_seg.png';"
+             onmouseout="document.getElementById('main_pic_seg').src='images/walkability/segformer/segformer3_seg.png';"
              class="thumbnail2">
     </div>
 </body>
