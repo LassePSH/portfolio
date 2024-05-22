@@ -86,13 +86,13 @@ The model obtained a macro F1 score of $$0.79$$ with a $$30 \%$$ test size of $$
 </p>
 
 <p align="center"> 
-  <img src='figures/S1network.png' 
+  <img src='images/walkability/segments.png' 
        onmouseover="main_pic.src='images/walkability/segments.png';"
        onmouseout="main_pic.src='images/walkability/topo.png';" 
-  <img src='figures/S2network.png' 
+  <img src='images/walkability/dual.png'
        onmouseover="main_pic.src='images/walkability/dual.png';"
        onmouseout="main_pic.src='images/walkability/topo.png';" 
-  <img src='figures/S3network.png' 
+  <img src='images/walkability/dual_conti.png' 
        onmouseover="main_pic.src='images/walkability/dual_conti.png';"
        onmouseout="main_pic.src='images/walkability/topo.png';" 
 </p>
