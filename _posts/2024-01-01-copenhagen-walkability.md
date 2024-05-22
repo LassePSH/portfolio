@@ -49,16 +49,15 @@ The individuals' experience of moving through the city is a combination of many 
 
 ## Network Features
 In order to extract properties from the street network, we used a dual graph representation where streets are represented as nodes and intersection are edges.
-In addition we applied street continuity, which allows the continuity of streets over a plurality of edges with aiffrence in angle below a fixed threshold.
-
+In addition we applied street continuity, which allows the continuity of streets over a plurality of edges with a fiffrence in angle below a fixed threshold.
 
 ![topo](images/walkability/topo.png)
+
+
 *Table: Construction of the street network.*
 
-
-
-## Enviormental Features
-To capture the visual qualities we used the deep learning image model Segformer[^1] fine-tuned on the CityScapes dataset to compute a vector representation of each image that describes the environmental features from a given image $$I_i$$. The Segformer model outputs the density of $$18$$ different classes. 
+## Visual Features
+To capture the enviormental qualities we used the deep learning image model Segformer[^1] fine-tuned on the CityScapes dataset to compute a vector representation of each image that describes the environmental features from a given image $$I_i$$. The Segformer model outputs the density of $$18$$ different classes. 
 
 ![segformer](images/walkability/segformer_1.png)
 
@@ -79,6 +78,24 @@ The model obtained a macro F1 score of $$0.79$$ with a $$30 \%$$ test size of $$
 | weighted avg | 0.7942    | 0.7927  | 0.7925   |
 
 *Table: Performance metrics*
+
+
+<p align="center"> 
+	<img src="images/walkability/topo.png" 
+    id="main_pic">
+</p>
+
+<p align="center"> 
+  <img src='figures/S1network.png' 
+       onmouseover="main_pic.src='images/walkability/segments.png';"
+       onmouseout="main_pic.src='images/walkability/topo.png';" 
+  <img src='figures/S2network.png' 
+       onmouseover="main_pic.src='images/walkability/dual.png';"
+       onmouseout="main_pic.src='images/walkability/topo.png';" 
+  <img src='figures/S3network.png' 
+       onmouseover="main_pic.src='images/walkability/dual_conti.png';"
+       onmouseout="main_pic.src='images/walkability/topo.png';" 
+</p>
 
 ---
 {: data-content="footnotes"}
