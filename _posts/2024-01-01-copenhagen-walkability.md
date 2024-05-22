@@ -4,12 +4,6 @@ author: Lasse P. S. H.
 title: "Explaining Urban Walkability Through Network and Visual Features"
 ---
 
-## Table of contents
-- [Walkability Index](#walkability-index)
-- [Explaining Walkability](#explaining-walkability)
-  - [Network Features](#network-features) 
-  - [Enviormental Features](#enviormental-features)
-
 # Abstract
 Understanding walking behavior in cities is critical to promoting physical activity and reducing reliance on fossil fuel-powered vehicles.
 Individuals’ experience of moving through the city is influenced by many factors, including the structure of the street network, the perception of safety, the accessibility of amenities, and the visual qualities of its built environment. 
@@ -38,18 +32,22 @@ $$
 \sigma_i = \frac{\sqrt{\sum_{j=1}^n w_{ij} (x_j - \mu_i)^2}}{\sum_{j=1}^n w_{ij}} 
 $$
 
+The following interactive map shows Copenhagen, where the red streets are deemed desirable and the blue streets are non-desirable. 
 
 <iframe
   src="https://lassepsh.github.io/walkability_map/"
   style="width:100%; height:700px;"
 ></iframe>
 
+![map2](images/walkability/map2.png)
+
 # Explaining Walkability
 The individuals' experience of moving through the city is a combination of many different factors and is a combination of both micro-level and macro-level features. In order to understand walking behavior of individuals it is important to consider both the network structure of the city and the enviormental features.
 
 ## Network Features
-In order to extract properties from the street network, we used a dual graph representation where streets are represented as nodes and intersection are edges.
-In addition we applied street continuity, which allows the continuity of streets over a plurality of edges with a fiffrence in angle below a fixed threshold.
+To extract properties from the street network, we used a dual graph representation, where streets are represented as nodes and intersections as edges. 
+Additionally, we applied street continuity, which ensures that streets remain continuous over multiple edges as long as the angle difference between them is below a fixed threshold.
+The following figure shows an example of the three stages, the street segments, the dual graph and the dual graph with directional continuity. 
 
 <html lang="en">
 <head>
@@ -87,8 +85,7 @@ In addition we applied street continuity, which allows the continuity of streets
 </body>
 </html>
 
-
-*Table: Construction of the street network.*
+From the graph representation of the street network, we can extract valuable properties, such as the street hierarchy, represented by the degree of each node.
 
 ## Visual Features
 To capture the enviormental qualities we used the deep learning image model Segformer[^1] fine-tuned on the CityScapes dataset to compute a vector representation of each image that describes the environmental features from a given image $$I_i$$. The Segformer model outputs the density of $$18$$ different classes. 
