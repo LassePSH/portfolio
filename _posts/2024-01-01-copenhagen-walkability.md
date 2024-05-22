@@ -90,7 +90,41 @@ From the graph representation of the street network, we can extract valuable pro
 ## Visual Features
 To capture the enviormental qualities we used the deep learning image model Segformer[^1] fine-tuned on the CityScapes dataset to compute a vector representation of each image that describes the environmental features from a given image $$I_i$$. The Segformer model outputs the density of $$18$$ different classes. 
 
-![segformer](images/walkability/segformer_1.png)
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .thumbnail {
+            width: 20%;
+            display: inline-block;
+        }
+        #main_pic {
+            width: 100%; /* Adjust this value to make the first picture smaller or larger */
+        }
+    </style>
+</head>
+<body>
+    <p align="center"> 
+        <img src="images/walkability/segformer/segformer1_seg.png" id="main_pic">
+    </p>
+
+    <p align="center"> 
+        <img src="images/walkability/segformer/segformer1_org.png" 
+             onmouseover="document.getElementById('main_pic').src='images/walkability/segformer/segformer1_seg.png';"
+             onmouseout="document.getElementById('main_pic').src='images/walkability/segformer/segformer1_seg.png';"
+             class="thumbnail">
+        <img src="images/walkability/segformer/segformer2_org.png" 
+             onmouseover="document.getElementById('main_pic').src='images/walkability/segformer/segformer2_seg.png';"
+             onmouseout="document.getElementById('main_pic').src='images/walkability/segformer/segformer2_seg.png';"
+             class="thumbnail">
+        <img src="images/walkability/segformer/segformer3_org.png" 
+             onmouseover="document.getElementById('main_pic').src='images/walkability/segformer/segformer3_seg.png';"
+             onmouseout="document.getElementById('main_pic').src='images/walkability/segformer/segformer3_seg.png';"
+             class="thumbnail">
+    </p>
+</body>
+</html>
 
 Each street segment contains multiple images. To get an average representation of the environmental features, an average across all vector representations from the Segformer model is computed from all the images related to the street segment:
 
