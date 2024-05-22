@@ -98,7 +98,7 @@ To capture the enviormental qualities we used the deep learning image model Segf
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .thumbnail2 {
-            width: 20%;
+            width: 18%;
             display: inline-block;
             cursor: pointer; /* Add cursor pointer for better UX */
         }
