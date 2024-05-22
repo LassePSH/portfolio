@@ -80,24 +80,39 @@ The model obtained a macro F1 score of $$0.79$$ with a $$30 \%$$ test size of $$
 *Table: Performance metrics*
 
 
-<p align="center"> 
-    <img src="images/walkability/topo.png" id="main_pic">
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .thumbnail {
+            width: 20%;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <p align="center"> 
+        <img src="images/walkability/topo.png" id="main_pic">
+    </p>
 
-<p align="center"> 
-    <img src="images/walkability/segments.png" 
-         onmouseover="document.getElementById('main_pic').src='images/walkability/segments.png';"
-         onmouseout="document.getElementById('main_pic').src='images/walkability/topo.png';"
-         width="20%">
-    <img src="images/walkability/dual.png"
-         onmouseover="document.getElementById('main_pic').src='images/walkability/dual.png';"
-         onmouseout="document.getElementById('main_pic').src='images/walkability/topo.png';"
-         width="20%">
-    <img src="images/walkability/dual_conti.png" 
-         onmouseover="document.getElementById('main_pic').src='images/walkability/dual_conti.png';"
-         onmouseout="document.getElementById('main_pic').src='images/walkability/topo.png';"
-         width="20%">
-</p>
+    <p align="center"> 
+        <img src="images/walkability/segments.png" 
+             onmouseover="document.getElementById('main_pic').src='images/walkability/segments.png';"
+             onmouseout="document.getElementById('main_pic').src='images/walkability/topo.png';"
+             class="thumbnail">
+        <img src="images/walkability/dual.png"
+             onmouseover="document.getElementById('main_pic').src='images/walkability/dual.png';"
+             onmouseout="document.getElementById('main_pic').src='images/walkability/topo.png';"
+             class="thumbnail">
+        <img src="images/walkability/dual_conti.png" 
+             onmouseover="document.getElementById('main_pic').src='images/walkability/dual_conti.png';"
+             onmouseout="document.getElementById('main_pic').src='images/walkability/topo.png';"
+             class="thumbnail">
+    </p>
+</body>
+</html>
 
 
 
