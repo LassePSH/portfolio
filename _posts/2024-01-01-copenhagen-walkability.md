@@ -87,14 +87,18 @@ The model obtained a macro F1 score of $$0.79$$ with a $$30 \%$$ test size of $$
 <p align="center"> 
     <img src="images/walkability/segments.png" 
          onmouseover="document.getElementById('main_pic').src='images/walkability/segments.png';"
-         onmouseout="document.getElementById('main_pic').src='images/walkability/topo.png';">
+         onmouseout="document.getElementById('main_pic').src='images/walkability/topo.png';"
+         width="20%">
     <img src="images/walkability/dual.png"
          onmouseover="document.getElementById('main_pic').src='images/walkability/dual.png';"
-         onmouseout="document.getElementById('main_pic').src='images/walkability/topo.png';">
+         onmouseout="document.getElementById('main_pic').src='images/walkability/topo.png';"
+         width="20%">
     <img src="images/walkability/dual_conti.png" 
          onmouseover="document.getElementById('main_pic').src='images/walkability/dual_conti.png';"
-         onmouseout="document.getElementById('main_pic').src='images/walkability/topo.png';">
+         onmouseout="document.getElementById('main_pic').src='images/walkability/topo.png';"
+         width="20%">
 </p>
+
 
 
 ---
