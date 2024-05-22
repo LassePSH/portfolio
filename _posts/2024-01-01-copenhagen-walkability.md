@@ -77,11 +77,11 @@ In addition we applied street continuity, which allows the continuity of streets
              class="thumbnail">
         <img src="images/walkability/dual.png"
              onmouseover="document.getElementById('main_pic').src='images/walkability/dual.png';"
-             onmouseout="document.getElementById('main_pic').src='images/walkability/segments.png';"
+             onmouseout="document.getElementById('main_pic').src='images/walkability/dual.png';"
              class="thumbnail">
         <img src="images/walkability/dual_conti.png" 
              onmouseover="document.getElementById('main_pic').src='images/walkability/dual_conti.png';"
-             onmouseout="document.getElementById('main_pic').src='images/walkability/segments.png';"
+             onmouseout="document.getElementById('main_pic').src='images/walkability/dual_conti.png';"
              class="thumbnail">
     </p>
 </body>
