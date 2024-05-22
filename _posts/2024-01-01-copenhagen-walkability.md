@@ -128,6 +128,14 @@ To capture the enviormental qualities we used the deep learning image model Segf
              onmouseover="document.getElementById('main_pic_seg').src='images/walkability/segformer/segformer3_seg.png';"
              onmouseout="document.getElementById('main_pic_seg').src='images/walkability/segformer/segformer3_seg.png';"
              class="thumbnail2">
+        <img src="images/walkability/segformer/segformer4_org.png" 
+             onmouseover="document.getElementById('main_pic_seg').src='images/walkability/segformer/segformer4_seg.png';"
+             onmouseout="document.getElementById('main_pic_seg').src='images/walkability/segformer/segformer4_seg.png';"
+             class="thumbnail2">
+        <img src="images/walkability/segformer/segformer5_org.png" 
+             onmouseover="document.getElementById('main_pic_seg').src='images/walkability/segformer/segformer5_seg.png';"
+             onmouseout="document.getElementById('main_pic_seg').src='images/walkability/segformer/segformer5_seg.png';"
+             class="thumbnail2">
     </div>
 </body>
 </html>
