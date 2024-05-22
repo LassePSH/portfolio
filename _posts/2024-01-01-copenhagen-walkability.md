@@ -51,7 +51,7 @@ The individuals' experience of moving through the city is a combination of many 
 In order to extract properties from the street network, we used a dual graph representation where streets are represented as nodes and intersection are edges.
 In addition we applied street continuity, which allows the continuity of streets over a plurality of edges with a fiffrence in angle below a fixed threshold.
 
-![topo](images/walkability/topo.png)
+![topo](images/walkability/segments.png)
 
 
 *Table: Construction of the street network.*
@@ -94,21 +94,21 @@ The model obtained a macro F1 score of $$0.79$$ with a $$30 \%$$ test size of $$
 </head>
 <body>
     <p align="center"> 
-        <img src="images/walkability/topo.png" id="main_pic">
+        <img src="images/walkability/segments.png" id="main_pic">
     </p>
 
     <p align="center"> 
         <img src="images/walkability/segments.png" 
              onmouseover="document.getElementById('main_pic').src='images/walkability/segments.png';"
-             onmouseout="document.getElementById('main_pic').src='images/walkability/topo.png';"
+             onmouseout="document.getElementById('main_pic').src='images/walkability/segments.png';"
              class="thumbnail">
         <img src="images/walkability/dual.png"
              onmouseover="document.getElementById('main_pic').src='images/walkability/dual.png';"
-             onmouseout="document.getElementById('main_pic').src='images/walkability/topo.png';"
+             onmouseout="document.getElementById('main_pic').src='images/walkability/segments.png';"
              class="thumbnail">
         <img src="images/walkability/dual_conti.png" 
              onmouseover="document.getElementById('main_pic').src='images/walkability/dual_conti.png';"
-             onmouseout="document.getElementById('main_pic').src='images/walkability/topo.png';"
+             onmouseout="document.getElementById('main_pic').src='images/walkability/segments.png';"
              class="thumbnail">
     </p>
 </body>
