@@ -8,10 +8,16 @@ title: "Explaining Urban Walkability Through Network and Visual Features"
 Understanding walking behavior in cities is critical to promoting physical activity and reducing reliance on fossil fuel-powered vehicles.
 Individuals’ experience of moving through the city is influenced by many factors, including the structure of the street network, the perception of safety, the accessibility of amenities, and the visual qualities of its built environment. 
 Existing research has combined these elements into walkability indexes, which assess the pedestrian-friendliness of urban areas and are widely used in policy-making, academic research, and real estate.
+However, the factors explaining cities' pedestrian-friendliness remain poorly understood. 
+This, is partly due to the limitations of available data capturing walking patterns, with available walkability indexes mostly built on survey data subject to biases such as small sample size.
+In this project, I will address this gap in the field by developing a new model of walkability based on extensive smartphone data and a multimodal learning framework.
+First, I will utilize large-scale physical activity data collected through smartphones.
+These data enable us to study walkability at higher spatial resolution (street segments) compared to approaches based on survey data, as revealed by previous work based on small samples of individuals.
+Secondly, I will leverage the opportunities offered by data-driven approaches based on machine learning to develop a model that captures the complexity of walking behavior in cities. 
+By employing a multimodal learning approach that combines street-view images, transportation and street network data, and other geographic information, this model aims to understand the complex interplay between urban environments and behavior across various cities.
 
 # Walkability Index
 To measure the desirability of a street segment, we compare the number of trips passing through it against the number of trips along neighboring streets that have similar directions.
-
 The desirability score for a given segment $$i$$ can be computed by the z-score, where a postive score indicate a desirable street and a negative a non-desirable street.
 
 $$
