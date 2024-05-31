@@ -103,5 +103,4 @@ We computed the percentage of awards given to the top $$n\%$$ awarded users of t
 It can be seen that the majority of awards are given to a small proportion of the awarded users. 
 The top $$1\%$$ awarded users have received $$40 \%$$ of the total awards. 
 This suggests that the award system follows the ”rich get richer” phenomenon. 
-Users who are already well­known or have established a reputation are more likely to receive awards, which enhances their visibility and popularity, leading to even more awards. 
-This creates a feedback loop where the rich get richer and the poor get poorer.
+Users who are already well­known or have established a reputation are more likely to receive awards, which enhances their visibility and popularity, leading to even more awards.  This creates a feedback loop where the rich get richer and the poor get poorer.
