@@ -92,7 +92,7 @@ It may be that in smaller networks, individuals are more likely to form connecti
 
 ## Awards Increases Awards
 This section seeks to investigate how the probability of receiving an award increases if the user is already awarded. 
-As previously mentioned, awards are a rare commodity, with only $$4\ %$$ of the authors from wallstreetbets receiving an award. 
+As previously mentioned, awards are a rare commodity, with only $$4 \%$$ of the authors from wallstreetbets receiving an award. 
 These awards are expected to be given to users that have produced high­quality, informative, entertaining, or otherwise valuable content for the community. However, there are indications that individuals receive more awards if they are previously awarded. 
 This could suggest a ”rich get richer” effect, which refers to the phenomenon where those who are already successful are more likely to continue to be successful. 
 This concept is often used in the context of economics, but can also be applied to social systems such as awards on Reddit communities. 
