@@ -1,6 +1,6 @@
 project_entries:
   - title: Fractality of street networks
-    url: overview-post
+    url: fractality-of-streets
     desc: Investigating the fractality of street networks with a dual graph representation of street networks
 
   - title: Walkability of Copenhagen
