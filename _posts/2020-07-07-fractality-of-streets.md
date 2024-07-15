@@ -6,7 +6,12 @@ title: "Fractality of street networks"
 
 # Fractals in street networks
 
-Fractals are prevalent in nature, and human structures are no exception. Street networks, for instance, exhibit fractal properties and follow a power-law distribution.
+Fractals are prevalent in nature, and human structures are no exception. Street networks, for instance, exhibit fractal properties and follow a power-law distribution. The Power law distribution is a continuous positive-only, univariate distribution that describes a quantity whose probability decreases as a power of its magnitude, i.e.,
+
+$$
+f(x) = ax{-k}}
+$$
+
 
 The figure below shows the degree distribution of 52 different cities using a dual graph representation with a direction continuity approach. 
 
@@ -25,6 +30,6 @@ The figure below shows the dual graph representation of the Sierpinski triangle.
 
 The degree distribution of the dual representation of the Sierpinski triangle can be compared to the street networks distribution.
 
-![plot](/portfolio/images/fractality/plot.png)
+![plot](/portfolio/images/fractality/degrees.png)
 
 It can be seen that the two distributions are very similar, highlighting the fractal nature of street networks.
