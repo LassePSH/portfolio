@@ -2,9 +2,9 @@ title: Lasse P. S. H.
 author: Lasse P. S. H.
 url: https://lassepsh.github.io/portfolio/ # root address of the site
 description: > # description of the site (multiple lines allowed)
-  I am a research assistant at the Technical University of Denmark (Social Complexity Lab).
+  I am a research assistant at the Technical University of Denmark.
   I hold an MSc from Techinical University of Denmark (DTU) in Human-Centered Artificial Intelligence.   
-  I have primarily focused on social data science and the quantification of human behavior, providing me with a unique perspective on the intersection of technology and humanity.
+  I Focus on social data science and the quantification of human behavior, providing me with a unique perspective on the intersection of technology and humanity.
 
 permalink: /:slug
 
