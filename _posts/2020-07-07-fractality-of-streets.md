@@ -7,7 +7,7 @@ title: "Fractality of street networks"
 # Fractals in street networks
 
 fractality are everywhere in nature..
-are human structures also a part of natrual structured.
+human structures also a part of natrual structured.
 it is a know fact that street networks follow a powerlaw distribution and have fractal properties
 
 The following figure shows the distribution 52 diffrent cities using dual graph representation with a directiong continuity approach.
