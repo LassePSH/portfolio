@@ -10,7 +10,7 @@ Fractals are prevalent in nature, and human structures are no exception. Street 
 
 The figure below shows the degree distribution of 52 different cities using a dual graph representation with a direction continuity approach. 
 
-![dist](/portfolio/images/fractality/dist.jpg)
+![dist](/portfolio/images/fractality/real_degree.png)
 
 It can be observed that there are two phase shifts in the distribution around degree 15. 
 The second phase follows a power law, indicating a self-similarity mechanism where the distribution appears consistent across different magnitudes. The fundamental building blocks of the fractal structure are evident in the first phase of the distribution.
