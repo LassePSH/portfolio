@@ -22,7 +22,7 @@ This concept is also applicable in urban planning, often referred to as the "15-
 
 <!-- To further evaluate the onset of the second phase and the initiation of fractality, a Kolmogorov-Smirnov (KS) test is employed with varying lower bounds of $x$. The figure illustrates the KS distance minus 1, where higher values indicate a better fit to the model. -->
 
-# Fractal in geometrical shapes
+# Geometrical Fractals
 
 To further understand this, we can compare the network distribution to known geometrical fractals, such as the Sierpinski triangle. 
 The figure below shows the dual graph representation of the Sierpinski triangle.
