@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Lasse P. S. H.
-title: "Fractality of street networks (working progress)"
+title: "Fractality of street networks"
 ---
 
 # Fractals in street networks
