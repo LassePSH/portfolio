@@ -14,7 +14,7 @@ $$
 
 The figure below shows the degree distribution of 52 different cities using a dual graph representation with a direction continuity approach. 
 
-![dist](/portfolio/images/fractality/real_degree.png)
+![dist](/images/fractality/real_degree.png)
 
 It can be observed that there are two phase shifts in the distribution. 
 The second phase follows a power law, indicating a self-similarity mechanism where the distribution appears consistent across different magnitudes. The fundamental building blocks of the fractal structure are evident in the first phase of the distribution.
@@ -27,10 +27,10 @@ This concept is also applicable in urban planning, often referred to as the "15-
 To further understand this, we can compare the network distribution to known geometrical fractals, such as the Sierpinski triangle. 
 The figure below shows the dual graph representation of the Sierpinski triangle.
 
-![tri](/portfolio/images/fractality/tri_dual.png)
+![tri](/images/fractality/tri_dual.png)
 
 The degree distribution of the dual representation of the Sierpinski triangle can be compared to the street networks distribution.
 
-![plot](/portfolio/images/fractality/degrees.png)
+![plot](/images/fractality/degrees.png)
 
 It can be seen that the two distributions are very similar, highlighting the fractal nature of street networks.

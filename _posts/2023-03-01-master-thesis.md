@@ -47,9 +47,9 @@ For each network we extracted 12 diffrent features explaining the behavior of th
 # Predicting Awarded Reddit Posts
 The Model uses the ELECTRA transformer model to handle the textual input, tokenizing the raw text before feeding it into the transformer. 
 A dropout layer is used to prevent overfitting of the textual input before concatenating the output of the ELECTRA with the network features.
-![theme logo](/portfolio/images/master_thesis/MasterThesisModel.png)
+![theme logo](/images/master_thesis/MasterThesisModel.png)
 
-![theme logo](/portfolio/images/master_thesis/confusion_matrix.png)
+![theme logo](/images/master_thesis/confusion_matrix.png)
 
 |    |Precision|Recall|&nbsp; &nbsp; F1-score &nbsp; &nbsp; |
 |:---|:---:|:---:|:---:|
@@ -76,12 +76,12 @@ This section shows the result of the investigation conducted on how community si
 Reciprocal edges are edges that go in both directions in directed networks. 
 The total number of reciprocal edges, can be seen as a metric of how well individual nodes are connected to each other and how dense the community is. 
 The following figures shows the the total number of reciprocal edges and the network size.
-![theme logo](/portfolio/images/master_thesis/mentions.png)
+![theme logo](/images/master_thesis/mentions.png)
 
 
 ### Mentions
 Reddit uses a system where users can mention individuals in the text by writing ”/u/” followed by a username. We computed the total number of mentions, which can be used as a measure of how well users know each other within the community.
-![theme logo](/portfolio/images/master_thesis/reciprocal.png)
+![theme logo](/images/master_thesis/reciprocal.png)
 
 <br>
 <br>
@@ -98,7 +98,7 @@ This could suggest a ”rich get richer” effect, which refers to the phenomeno
 This concept is often used in the context of economics, but can also be applied to social systems such as awards on Reddit communities. 
 We computed the percentage of awards given to the top $$n\%$$ awarded users of the awarded users. The following figure shows the cumulative rate of the total awards given to the top awarded users.
 
-![theme logo](/portfolio/images/master_thesis/getrich.png)
+![theme logo](/images/master_thesis/getrich.png)
 
 It can be seen that the majority of awards are given to a small proportion of the awarded users. 
 The top $$1\%$$ awarded users have received $$40 \%$$ of the total awards. 

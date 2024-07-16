@@ -29,7 +29,7 @@ Given the sheer volume of weights involved, the computation of the covariance ma
 
 The following figure shows an example of $$300$$ samples of two weights in the last dense layer in the model.
 
-![swag](/portfolio/images/swag/swag.png)
+![swag](/images/swag/swag.png)
 
 ### multiSWAG
 MultiSWAG is a deep ensemble extension of SWAG [^2]. 
@@ -37,7 +37,7 @@ Ensemble learning combines several individual models to obtain better generaliza
 By using MultiSWAG more of the weight-space is investigated. 
 The following Figure shows SWAG samples from the dense layer from 15 individual Electra models. 
 
-![multi_swag_samples](/portfolio/images/swag/samples.png)
+![multi_swag_samples](/images/swag/samples.png)
 
 # The Model
 The model uses a pretranined-ELECTRA basemodel and a single dense layer with dropout and a prediction layer followed by a softmax function.
@@ -48,7 +48,7 @@ The following Figure shows the training histories for 15 ensembles using the mul
 The left side shows the initial step using ADAM optimizers. 
 The right side shows the training histories for the SWAG approach using SGD optimizers.
 
-![multi_swag_samples](/portfolio/images/swag/train.png)
+![multi_swag_samples](/images/swag/train.png)
 
 ## Results
 The results shows that multiSWAG increases the performance of the base model.
