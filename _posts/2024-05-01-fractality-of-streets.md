@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Lasse P. S. H.
-title: "Fractality of street networks"
+title: "Fractality of street networks (working progress)"
 ---
 
 # Fractals in street networks
@@ -33,4 +33,4 @@ The degree distribution of the dual representation of the Sierpinski triangle ca
 
 ![plot](/images/fractality/degrees.png)
 
-It can be seen that the two distributions are very similar, highlighting the fractal nature of street networks.
+It can be seen that the two distributions both follows a power-law, highlighting the fractal nature of street networks.
