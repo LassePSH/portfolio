@@ -165,6 +165,7 @@ The model obtained a macro F1 score of $$0.79$$ with a $$30 \%$$ test size of $$
 
 *Table: Performance metrics*
 
+The project was presented at [NetSciX](https://netscix2024.netscisociety.org/program/thursday-25/parallel-sessions-7) in 2024.
 
 ---
 {: data-content="footnotes"}
