@@ -22,7 +22,7 @@ The data is balanced such that it contains an equal amount of awarded and not aw
 <br>
 We created a total $$56278$$ diffrent networks. 
 The following figure shows an example of a single discrete­time dynamic graph from 2020-­12-­25 to 2021-­03-­25.
-![theme logo](/portfolio/images/master_thesis/frontpage_4.jpg)
+![theme logo](/images/master_thesis/frontpage_4.jpg)
 
 For each network we extracted 12 diffrent features explaining the behavior of the author within the network.
 
