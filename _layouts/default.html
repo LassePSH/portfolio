@@ -1,20 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: "en" }}" class="html" data-theme="{{ site.theme_config.appearance | default: "auto" }}">
         {%- include head.html -%}
-
-  <head>
-    <title>particles.js</title>
-
-    <!-- Import style.css from root directory -->
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-
   <body>
     <main class="page-content" aria-label="Content">
-      
-        <div id="particles-js">
-        <div class="heading">
-
       <div class="w">
         {{ content }}
         {% if site.theme_config.appearance_toggle %}
@@ -37,7 +25,6 @@
         </div>
       </div>
     </main>
-
     {%- if site.soopr -%}
       {%- if site.soopr.publish_token and jekyll.environment == "production" -%}
         <script async defer data-soopr-token="{{site.soopr.publish_token}}" src="https://sdk.soopr.co/soopr.js"></script>
@@ -45,15 +32,6 @@
         <script async defer src="https://sdk.soopr.co/soopr.js"></script>
       {%- endif -%}
     {%- endif -%}
-
-  <!-- Import Particles.js and app.js files -->
-  <script src=
-  "particles.js-master/particles.js">
-  </script>
-  <script src=
-  "/particles.js-master/demo/js/app.js">
-  </script>
-
 
   </body>
 </html>
