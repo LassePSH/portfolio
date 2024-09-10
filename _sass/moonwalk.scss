@@ -81,6 +81,12 @@ img {
       --share-text: #999;
   }
 }
+
+#particles-js {
+  background: black;
+  height: 100vh;
+}
+
 // -------------- THEME SWITCHER -------------- //
 @mixin dark-appearance {
   html, body  {
