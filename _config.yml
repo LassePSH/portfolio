@@ -6,7 +6,7 @@ description: > # description of the site (multiple lines allowed)
   I am a research assistant at the Technical University of Denmark. 
   I hold an MSc from the Technical University of Denmark (DTU) in Human-Centered Artificial Intelligence. 
   My work focuses on social data science and the quantification of human behavior, providing me with a unique perspective on the intersection of technology and humanity. 
-  I draw approaches from mathematical modeling, complex systems, machine learning, and statistical analysis. 
+  I apply approaches from mathematical modeling, complex systems, machine learning, and statistical analysis. 
 
 permalink: /:slug
 
@@ -18,7 +18,7 @@ remote_theme: abhinavs/moonwalk
 theme_config:
   appearance: "light" # can be "light", "dark" or "auto"
   appearance_toggle: true # if appearance can be switched by user
-  back_home_text: "home.." # customize text for homepage link in post layout
+  back_home_text: "Home.." # customize text for homepage link in post layout
   date_format: "%Y-%m-%d" # customize how date is formatted
   show_description: true # show blog description
   show_navbar: false # show horizontal navbar
