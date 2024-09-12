@@ -3,6 +3,9 @@
         {%- include head.html -%}
   <body>
     <main class="page-content" aria-label="Content">
+
+      <div id="particles-js"></div>
+
       <div class="w">
         {{ content }}
         {% if site.theme_config.appearance_toggle %}
@@ -32,6 +35,14 @@
         <script async defer src="https://sdk.soopr.co/soopr.js"></script>
       {%- endif -%}
     {%- endif -%}
+
+  <script src=
+    "/assets/particles.js/particles.js">
+  </script>
+  <script src=
+      "/assets/particles.js/demo/js/app.js">
+  </script>
+
 
   </body>
 </html>
