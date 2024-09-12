@@ -1,3 +1,2 @@
-Big shout out to for the layout https://github.com/abhinavs/moonwalk.
-And https://github.com/holtzy/quarto-tricks/tree/main for the particles.
-
+- Layout made by @abhiavs https://github.com/abhinavs/moonwalk modified by me.
+- Particles by https://github.com/holtzy/quarto-tricks/tree/main 
