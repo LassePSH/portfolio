@@ -91,6 +91,7 @@ canvas{
   background-color: #b61924;
   background-image: url('');
   background-size: cover;
+  z-index: -1; /* Send the particles behind the content */
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
