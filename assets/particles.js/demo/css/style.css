@@ -28,6 +28,7 @@ html,body{
 	width:100%;
 	height:100%;
 	background:#111;
+  background: transparent; /* No background color */
 }
 
 html{
@@ -91,6 +92,7 @@ canvas{
   background-color: #b61924;
   background-image: url('');
   background-size: cover;
+  background: transparent; /* No background color */
   z-index: -1; /* Send the particles behind the content */
   background-position: 50% 50%;
   background-repeat: no-repeat;
