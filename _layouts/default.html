@@ -5,7 +5,9 @@
   <body>
     <main class="page-content" aria-label="Content">
 
+      {% if page.url == "/" %}
       <div id="particles-js"></div>
+    {% endif %}
 
       <div class="w">
         {{ content }}
