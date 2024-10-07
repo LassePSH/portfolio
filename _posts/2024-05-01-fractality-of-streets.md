@@ -41,5 +41,5 @@ A similar analogy applies to street networks, where clusters of '15-minute citie
 <br>
 <br>
 As seen in figure 3 the two samples of degress do not follow the exact same distribition. 
-However there are many other geometrical fractals such as the Sierpiński carpet, Koch snowflake or even more complex fractal such as the mandlebrot set. 
+However there are many other geometrical fractals such as the Sierpiński carpet, Koch snowflake or even more complex fractals such as the mandlebrot set. 
 Is there a geometrical fractal that can explain the scale-free nature of street networks?
