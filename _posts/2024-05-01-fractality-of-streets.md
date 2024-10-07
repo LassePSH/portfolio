@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Lasse P. S. H.
-title: "Fractality of street networks"
+title: "Fractality of street networks (working progress)"
 ---
 
 # Fractals in street networks
@@ -23,7 +23,6 @@ This concept is also applicable in urban planning, often referred to as the "15-
 <!-- To further evaluate the onset of the second phase and the initiation of fractality, a Kolmogorov-Smirnov (KS) test is employed with varying lower bounds of $x$. The figure illustrates the KS distance minus 1, where higher values indicate a better fit to the model. -->
 
 # Geometrical Fractals
-
 To further understand this, we can compare the network distribution to known geometrical fractals, such as the Sierpinski triangle. 
 The figure below shows the dual graph representation of the Sierpinski triangle.
 
@@ -33,4 +32,5 @@ The degree distribution of the dual representation of the Sierpinski triangle ca
 
 ![plot](/images/fractality/degrees.png)
 
-It can be seen that the two distributions both follows a power-law, highlighting the fractal nature of street networks.
+It can be seen that the two distributions both follows a power-law, highlighting the fractal nature of street networks. The Sierpinski triangle is constructed from multiple equilateral triangles, which serve as the fundamental building blocks. These base triangles combine to form higher levels of hierarchy. A similar analogy applies to street networks, where clusters of '15-minute cities' combine to form larger urban areas, urban areas combine to create cities, cities combines to create regions, and so on.
+
