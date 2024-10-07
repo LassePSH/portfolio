@@ -5,8 +5,8 @@ title: "Fractality of street networks (working progress)"
 ---
 
 # Fractals in street networks
-
-Fractals are prevalent in nature, and human structures are no exception. Street networks, for instance, exhibit fractal properties and follow a power-law distribution. The Power law distribution is a continuous positive-only, univariate distribution that describes a quantity whose probability decreases as a power of its magnitude, i.e.,
+Fractals are prevalent in nature, and human structures are no exception. Street networks, for instance, exhibit fractal properties and follow a power-law distribution. 
+The Power law distribution is a continuous positive-only, univariate distribution that describes a quantity whose probability decreases as a power of its magnitude, i.e.,
 
 $$
 f(x) = ax^{-k}
@@ -35,8 +35,11 @@ The degree distribution of the dual representation of the Sierpinski triangle ca
 ![plot](/images/fractality/degrees.png)
 *Figure 3: Degree Distribition*
 
-It can be seen that the two distributions both follows a power-law, highlighting the fractal nature of street networks. The Sierpinski triangle is constructed from multiple equilateral triangles, which serve as the fundamental building blocks. These base triangles combine to form higher levels of hierarchy. A similar analogy applies to street networks, where clusters of '15-minute cities' combine to form larger urban areas, urban areas combine to create cities, cities combines to create regions, and so on.
+It can be seen that the two distributions both follows a power-law, highlighting the fractal nature of street networks. 
+The Sierpinski triangle is constructed from multiple equilateral triangles, which serve as the fundamental building blocks. These base triangles combine to form higher levels of hierarchy. 
+A similar analogy applies to street networks, where clusters of '15-minute cities' combine to form larger urban areas, urban areas combine to create cities, cities combines to create regions, and so on.
 <br>
 <br>
-As seen in figure 3 the two samples of degress do not follow the exact same distribition. However there are many other geometrical fractals such as the Sierpiński carpet, Koch snowflake or even more complex fractal such as the mandlebrot set. Is there a geometrical fractal that can explain the scale-free nature of street network? 
-
+As seen in figure 3 the two samples of degress do not follow the exact same distribition. 
+However there are many other geometrical fractals such as the Sierpiński carpet, Koch snowflake or even more complex fractal such as the mandlebrot set. 
+Is there a geometrical fractal that can explain the scale-free nature of street networks?
