@@ -12,7 +12,7 @@ $$
 f(x) = ax^{-k}
 $$
 
-The figure below shows the degree distribution of 52 different cities using a dual graph representation with a direction continuity approach. 
+The figure below shows the degree distribution of 52 different cities using a dual graph representation with a direction continuity approach [^1]. 
 
 ![dist](images/fractality/real_degree.png)
 *Figure 1: Degree Distribition*
@@ -43,3 +43,7 @@ A similar analogy applies to street networks, where clusters of '15-minute citie
 As seen in figure 3 the two samples of degress do not follow the exact same distribition. 
 However there are many other geometrical fractals such as the Sierpiński carpet, Koch snowflake or even more complex fractals such as the mandlebrot set. 
 Is there a geometrical fractal that can explain the scale-free nature of street networks?
+
+{: data-content="footnotes"}
+
+[^1]: The Network Analysis of Urban Streets: A Dual Approach: Sergio Porta, Paolo Crucitti, Vito Latora
