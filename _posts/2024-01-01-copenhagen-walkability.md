@@ -38,7 +38,7 @@ $$
 \sigma_i = \frac{\sqrt{\sum_{j=1}^n w_{ij} (x_j - \mu_i)^2}}{\sum_{j=1}^n w_{ij}} 
 $$
 
-The following interactive map shows Copenhagen, where the red streets are deemed desirable and the blue streets are non-desirable. 
+The following interactive map shows Copenhagen, where the red streets are deemed desirable and the blue streets are non-desirable. The full size can be found [here](https://lassepsh.github.io/walkability_map/)
 
 <iframe
   src="https://lassepsh.github.io/walkability_map/"
