@@ -45,8 +45,6 @@ The following interactive map shows Copenhagen, where the red streets are deemed
   style="width:100%; height:700px;"
 ></iframe>
 
-![map2](images/walkability/map2.png)
-
 # Explaining Walkability
 The individuals' experience of moving through the city is a combination of many different factors and is a combination of both micro-level and macro-level features. In order to understand walking behavior of individuals it is important to consider both the network structure of the city and the enviormental features.
 
@@ -92,7 +90,11 @@ The following figure shows an example of the three stages, the street segments, 
 </body>
 </html>
 
-From the graph representation of the street network, we can extract valuable properties, such as the street hierarchy, represented by the degree of each node.
+From the graph representation of the street network, we can extract valuable properties, such as the street hierarchy, represented by the degree of each node. 
+The following figure shows the degree distribution of the street network, where the distribution indicate a powerlaw distribution with a phase transition around 9. 
+The phase shift is evaluated by performing a Kolmogorov–Smirnov test (read more [here](https://lasse-pelle.com/fractality-of-streets)).  
+
+![degree](images/walkability/degree.png)
 
 ## Visual Features
 To capture the enviormental qualities we used the deep learning image model Segformer[^1] fine-tuned on the CityScapes dataset to compute a vector representation of each image that describes the environmental features from a given image $$I_i$$. The Segformer model outputs the density of $$18$$ different classes. 
