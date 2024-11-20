@@ -91,13 +91,6 @@ The following figure shows an example of the three stages, the street segments, 
 </html>
 
 From the graph representation of the street network, we can extract valuable properties, such as the street hierarchy, represented by the degree of each node. 
-<!-- The following figure shows the degree distribution of the street network, with a phase transition around 9 where the second phase follows a power law, indicating a self-similarity mechanism. 
-The phase shift is evaluated by performing a Kolmogorov–Smirnov test (read more [here](https://lasse-pelle.com/fractality-of-streets)).  
-
-![degree](images/walkability/degree.png) -->
-
-<!-- The desirable and non-desirable streets can be seperated into sub-categories, higher and lower hierachy street define by the phase transition of the degree distribution.  -->
-
 
 
 ## Visual Features
