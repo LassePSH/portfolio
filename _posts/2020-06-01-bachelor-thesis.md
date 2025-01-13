@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Lasse P. S. H.
-title: Bachelor Thesis - Solar Tree
+title: Bachelor Thesis - The Solar Tree
 ---
 
 The full thesis can be found [here](https://lasse-pelle.com/papers/Bachelor_Thesis.pdf)
