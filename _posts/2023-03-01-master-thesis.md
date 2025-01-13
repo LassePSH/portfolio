@@ -6,6 +6,7 @@ title: "Explaining Successful Reddit Posts"
 
 This post shows the key results from my Master Thesis. The full thesis can be found [here](https://www.lasse-pelle.com/papers/Master_Thesis.pdf).
 <br>
+<br>
 The thesis explores how the acknowledgment of individuals can be quantitively measured by exploiting the Reddit award system. 
 The thesis primarily focuses on data from the subreddit [wallstreetbets](https://www.reddit.com/r/wallstreetbets/), where we analyzed the social dynamics of the community using network science and Natural Language Processing. 
 We developed a Deep Learning model that classifies awarded posts, using network features and the transformer model ELECTRA. 
