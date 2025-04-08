@@ -48,7 +48,7 @@ The following interactive map shows Copenhagen, where the red streets are deemed
 A clear indication that the method works is that the streets around the lakes of Copenhagen are deemed desirable.
 
 <div style="width: 80%;">
-    <img src="images/walkability/cool_map_2.png" alt="theme logo" style="width: 100%;">
+    <img src="images/walkability/cool_map_2.png" alt="theme logo" style="width: 80%;">
 </div>
 
 # Explaining Walkability
