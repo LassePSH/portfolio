@@ -47,7 +47,9 @@ The following interactive map shows Copenhagen, where the red streets are deemed
 
 A clear indication that the method works is that the streets around the lakes of Copenhagen are deemed desirable.
 
-![theme logo](images/walkability/cool_map_2.png)
+<div style="width: 80%;">
+    <img src="images/walkability/cool_map_2.png" alt="theme logo" style="width: 100%;">
+</div>
 
 # Explaining Walkability
 The individuals' experience of moving through the city is a combination of many different factors and is a combination of both micro-level and macro-level features. In order to understand walking behavior of individuals it is important to consider both the network structure of the city and the enviormental features.
