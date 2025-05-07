@@ -25,32 +25,26 @@ Stochastic Weight Averaging Gaussian (SWAG) emerged as a pioneering method for u
 
 Subsequently, this distribution serves as a basis for sampling new weights, thereby enabling exploration of a broader spectrum of the weight space. Notably, the covariance computation can be executed via two distinct methods: the SWAG-Diagonal approach or the Low Rank plus Diagonal Covariance Structure method. The SWAG-Diagonal method entails the calculation of diagonal elements within the covariance matrix, offering insights into the uncertainty inherent in individual weight parameters.
 
-Given the sheer volume of weights involved, the computation of the covariance matrix often occurs in a continuous stream, with each SGD iterate contributing incrementally to its construction. This iterative process ensures a comprehensive representation of uncertainty throughout the training trajectory, facilitating robust exploration and refinement within the weight space.
-
-The following figure shows an example of $$300$$ samples of two weights in the last dense layer in the model.
-
-![swag](/images/swag/swag.png)
-
 ### multiSWAG
-MultiSWAG is a deep ensemble extension of SWAG [^2]. 
-Ensemble learning combines several individual models to obtain better generalization performance. 
-By using MultiSWAG more of the weight-space is investigated. 
-The following Figure shows SWAG samples from the dense layer from 15 individual Electra models. 
-
-![multi_swag_samples](/images/swag/samples.png)
+MultiSWAG is a deep ensemble extension of SWAG [^2]. Ensemble learning combines several individual models to obtain better generalization performance by leveraging the diversity of multiple predictions. By training multiple models and sampling from each of their weight distributions, MultiSWAG explores a broader portion of the weight space compared to traditional SWAG. This increased exploration helps capture a wider range of possible solutions, improving uncertainty estimates and reducing overfitting. As a result, MultiSWAG offers a more robust and accurate representation of model uncertainty, leading to better performance on unseen data.
 
 # The Model
 The model uses a pretranined-ELECTRA basemodel and a single dense layer with dropout and a prediction layer followed by a softmax function.
 The data have been split into $$60 \%$$, $$30 \%$$ and $$10 \%$$ for training, testing and validation. 
 
 ## Training
-The following Figure shows the training histories for 15 ensembles using the multiSWAG approach. 
+The following Figure shows the training histories for 10 models using the multiSWAG approach. 
 The left side shows the initial step using ADAM optimizers. 
 The right side shows the training histories for the SWAG approach using SGD optimizers.
 
 ![multi_swag_samples](/images/swag/train.png)
 
 ## Results
+The following figure illustrates the weight space in the final dense layer of the model(s). Ten distinct models are sampled from each of the 10 different weight spaces, resulting in an ensemble of 100 models. The colormap represents the probability of a correct prediction for the sentence: "Er de fuldstændig ravende sindsyge i R? Landsforræderi."
+
+![probability](/images/swag/probs.png)
+
+
 The results shows that multiSWAG increases the performance of the base model.
 
 |             | Precision | Recall | F1     |
