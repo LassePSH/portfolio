@@ -24,7 +24,6 @@ The model is trained on $$6000$$ annotated text pieces collected from comment th
 Stochastic Weight Averaging Gaussian (SWAG) emerged as a pioneering method for uncertainty representation in 2019 [^1]. The approach involves a multi-step process wherein an initial model undergoes training, followed by further refinement using a Stochastic Gradient Descent (SGD) optimizer. During this training phase, crucial information about the weights at each step along the trajectory is meticulously preserved. This meticulous record-keeping allows for the computation of covariance, wherein an approximate distribution over the weights is established based on the SGD iterates.
 
 Subsequently, this distribution serves as a basis for sampling new weights, thereby enabling exploration of a broader spectrum of the weight space. Notably, the covariance computation can be executed via two distinct methods: the SWAG-Diagonal approach or the Low Rank plus Diagonal Covariance Structure method. The SWAG-Diagonal method entails the calculation of diagonal elements within the covariance matrix, offering insights into the uncertainty inherent in individual weight parameters.
-
 ### multiSWAG
 MultiSWAG is a deep ensemble extension of SWAG [^2]. Ensemble learning combines several individual models to obtain better generalization performance by leveraging the diversity of multiple predictions. By training multiple models and sampling from each of their weight distributions, MultiSWAG explores a broader portion of the weight space compared to traditional SWAG. This increased exploration helps capture a wider range of possible solutions, improving uncertainty estimates and reducing overfitting. As a result, MultiSWAG offers a more robust and accurate representation of model uncertainty, leading to better performance on unseen data.
 
@@ -43,7 +42,7 @@ The right side shows the training histories for the SWAG approach using SGD opti
 The following figure illustrates the weight space in the final dense layer of the model(s). Ten distinct models are sampled from each of the 10 different weight spaces, resulting in an ensemble of 100 models. The colormap represents the probability of a correct prediction for the sentence: "Er de fuldstændig ravende sindsyge i R? Landsforræderi."
 
 ![probability](/images/swag/probs.png)
-*$60 \% of the models predicted the sentece as hatespeech*
+*$60 \$% of the models predicted the sentece as hatespeech*
 
 
 The results shows that multiSWAG increases the performance of the base model.
