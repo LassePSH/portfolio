@@ -42,7 +42,7 @@ The right side shows the training histories for the SWAG approach using SGD opti
 The following figure illustrates the weight space in the final dense layer of the model(s). Ten distinct models are sampled from each of the 10 different weight spaces, resulting in an ensemble of 100 models. The colormap represents the probability of a correct prediction for the sentence: "Er de fuldstændig ravende sindsyge i R? Landsforræderi."
 
 ![probability](/images/swag/probs.png)
-*$60 \$% of the models predicted the sentece as hatespeech*
+*$60 \$% of the models predicted the sentece as hatespeech.*
 
 
 The results shows that multiSWAG increases the performance of the base model.
