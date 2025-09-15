@@ -33,7 +33,7 @@ footer_entries:
   - title: LinkedIn
     url: https://www.linkedin.com/in/lasse-pelle-skytte-hansen-aa068b1ba/
 
-# misc_entries:
+misc_entries:
 #   - title: this is an example vertical list
 #     url: false
 
@@ -52,12 +52,12 @@ footer_entries:
 #     entries:
 #       - title: on Github
 #         url: https://github.com/abhinavs/moonwalk
+misc_entries:
+  - title: Layout stolen/inspired by @abhiavs. Modified by me.
+    url: https://github.com/abhinavs/moonwalk
 
-  # - title: Layout stolen/inspired by @abhiavs. Modified by me.
-  #   url: https://github.com/abhinavs/moonwalk
-
-  # - title: Background/Particles by @holtzy
-  #   url: https://github.com/holtzy/quarto-tricks/tree/main 
+  - title: Background/Particles by @holtzy
+    url: https://github.com/holtzy/quarto-tricks/tree/main 
 
 
 #       - title: this list is scalable and can be nested
