@@ -16,15 +16,10 @@ project_entries:
     url: hate-speech
     desc: Using a deep ensemble bayesian approach to classify text as hate speech
 
-  - title: Bachelor Thesis - The Solar Tree
-    url:  bachelor-thesis
-    desc: Organic Solar Cell installation for Roskilde Festival
+  # - title: Bachelor Thesis - The Solar Tree
+  #   url:  bachelor-thesis
+  #   desc: Organic Solar Cell installation for Roskilde Festival
 
-# old_project_entries:
-#   - title: Soopr
-#     url: https://www.soopr.co
-#     desc: Delight your readers - add beautiful share and like buttons easily to your websites 
-#     highlight: NEW
 
 footer_entries:
   - title: Email
