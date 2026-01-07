@@ -22,8 +22,8 @@ The second phase follows a power law, indicating a self-similarity mechanism whe
 This concept is also applicable in urban planning, often referred to as the "15-minute city." In this model, most daily necessities and services—such as work, shopping, education, healthcare, and leisure—are easily accessible within a 15-minute journey. Each "15-minute city" unit can be seen as a basic building block of the urban fractal, where these self-sufficient neighborhoods combine to form the larger urban structure, maintaining the self-similarity at different scales.
 
 To further evaluate the onset of the second phase and the initiation of fractality, a Kolmogorov-Smirnov (KS) test is employed with varying lower bounds of $$x$$. The figure illustrates the KS distance minus 1, where higher values indicate a better fit to the model. 
-The phase shift is "eyeballed" around 9 at the elbow of the point of the curve. 
-This indicate that "15-minnute city" is streets with a degree lower than 9.
+The phase shift is "eyeballed" around 7 at the elbow of the point of the curve. 
+<!-- This indicate that "15-minnute city" is streets with a degree lower than 7. -->
 
 ![ks](/images/fractality/KS_distance.png)
 
