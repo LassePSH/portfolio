@@ -14,7 +14,7 @@ $$
 
 The figure below shows the degree distribution of 52 different cities using a dual graph representation with a direction continuity approach [^1]. 
 
-![dist](images/fractality/real_degree.png)
+![dist](images/fractality/degree_dist.png)
 *Figure 1: Degree Distribition*
 
 It can be observed that there are two phase shifts in the distribution. 
@@ -25,7 +25,7 @@ To further evaluate the onset of the second phase and the initiation of fractali
 The phase shift is "eyeballed" around 9 at the elbow of the point of the curve. 
 This indicate that "15-minnute city" is streets with a degree lower than 9.
 
-![ks](/images/fractality/ks_text.png)
+![ks](/images/fractality/KS_distance.png)
 
 # Geometrical Fractals
 To further understand this, we can compare the network distribution to known geometrical fractals, such as the Sierpinski triangle. 
