@@ -1,33 +1,32 @@
-// assets/js/scrolly.js
-
 (function () {
-  // Exit early if no scrolly steps on the page
   const steps = document.querySelectorAll(".step");
-  if (!steps.length) return;
+  const vis = document.getElementById("vis"); // your LP.png will be here
 
-  // Initialize scrollama
+  if (!steps.length || !vis) return;
+
   const scroller = scrollama();
 
   function handleStepEnter(response) {
     const step = response.element.dataset.step;
-    updateGraphic(step);
-  }
 
-  function handleResize() {
-    scroller.resize();
-  }
-
-  function updateGraphic(step) {
-    // 🔁 Replace this switch with real logic later
     switch (step) {
       case "1":
-        console.log("Step 1 entered");
+        vis.style.opacity = 0;
+        vis.style.transform = "translateY(50px) scale(1)";
         break;
       case "2":
-        console.log("Step 2 entered");
+        vis.src = "/images/LP.png";
+        vis.style.opacity = 1;
+        vis.style.transform = "translateY(0px) scale(1)";
         break;
-      default:
-        console.log("Step", step);
+      case "3":
+        vis.style.opacity = 1;
+        vis.style.transform = "translateY(-30px) scale(1.05)";
+        break;
+      case "4":
+        vis.style.opacity = 0;
+        vis.style.transform = "translateY(-50px) scale(0.9)";
+        break;
     }
   }
 
@@ -39,5 +38,5 @@
     })
     .onStepEnter(handleStepEnter);
 
-  window.addEventListener("resize", handleResize);
+  window.addEventListener("resize", () => scroller.resize());
 })();
