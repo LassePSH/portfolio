@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/scrolly.css' | relative_url }}">
+
+<article class="scrolly-container">
+  <div class="scrolly-text">
+    {{ content }}
+  </div>
+
+  <div class="scrolly-graphic">
+    <svg id="vis"></svg>
+  </div>
+</article>
+
+<!-- Scrollytelling scripts -->
+<script src="https://unpkg.com/scrollama"></script>
+<script src="{{ '/assets/js/scrolly.js' | relative_url }}"></script>

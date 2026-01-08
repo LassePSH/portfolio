@@ -1,0 +1,74 @@
+/* assets/css/scrolly.css */
+
+/* ---------- Layout ---------- */
+
+.scrolly-container {
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) minmax(280px, 1fr);
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+/* Text column */
+.scrolly-text {
+  position: relative;
+}
+
+/* Sticky graphic column */
+.scrolly-graphic {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- Steps ---------- */
+
+.step {
+  margin: 0 auto 70vh auto;
+  max-width: 38rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.step:last-child {
+  margin-bottom: 100vh;
+}
+
+/* Active step (Scrollama adds this class) */
+.step.is-active {
+  opacity: 1;
+}
+
+/* ---------- Graphic ---------- */
+
+#vis {
+  width: 100%;
+  height: 80vh;
+}
+
+/* ---------- Mobile Fallback ---------- */
+
+@media (max-width: 768px) {
+  .scrolly-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .scrolly-graphic {
+    position: relative;
+    height: auto;
+    order: -1;
+  }
+
+  .step {
+    margin-bottom: 4rem;
+    opacity: 1;
+  }
+}
