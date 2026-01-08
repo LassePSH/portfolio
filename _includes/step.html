@@ -1,3 +1,8 @@
-<div class="step" data-step="{{ include.id }}">
+<div 
+  class="step" 
+  data-step="{{ include.id }}"
+  {% if include.anim %} data-anim="{{ include.anim }}" {% endif %}
+  {% if include.img %} data-img="{{ include.img }}" {% endif %}
+>
   {{ include.content | markdownify }}
 </div>
