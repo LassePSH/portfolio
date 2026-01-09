@@ -4,18 +4,15 @@ layout: default
 
 <link rel="stylesheet" href="{{ '/assets/css/scrolly.css' | relative_url }}">
 
-<article class="scrolly-container">
-  <div class="scrolly-text">
+<div class="scrolly">
+  <div class="scrolly__graphic">
+    <img id="vis" src="" alt="">
+  </div>
+
+  <div class="scrolly__text">
     {{ content }}
   </div>
+</div>
 
-  <div class="scrolly-graphic">
-    <!-- This is the image that JS will animate -->
-    <img id="vis" src="" alt="LP image">
-  </div>
-</article>
-
-
-<!-- Scrollytelling scripts -->
 <script src="https://unpkg.com/scrollama"></script>
 <script src="{{ '/assets/js/scrolly.js' | relative_url }}"></script>
