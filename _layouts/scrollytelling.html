@@ -1,18 +1,53 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}" class="html" data-theme="{{ site.theme_config.appearance | default: 'auto' }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.scss' | relative_url }}">
+  {%- include head.html -%}
+  <body>
+    <main class="page-content" aria-label="Content">
+      <link rel="stylesheet" href="{{ '/assets/css/scrolly.css' | relative_url }}">
 
-<link rel="stylesheet" href="{{ '/assets/css/scrolly.css' | relative_url }}">
+      <!-- Title / intro section -->
+      <section class="scrolly-intro">
+        <div class="scrolly-intro__inner">
+          {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
+          {% if page.subtitle %}<p class="scrolly-intro__subtitle">{{ page.subtitle }}</p>{% endif %}
+          <div class="scrolly-intro__scroll-hint" aria-hidden="true">
+            <span>Scroll to explore</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+          </div>
+        </div>
+      </section>
 
-<div class="scrolly">
-  <div class="scrolly__graphic">
-    <img id="vis" src="" alt="">
-  </div>
+      <!-- Scrollytelling two-panel section -->
+      <section class="scrolly-container">
+        <div class="scrolly-text">
+          {{ content }}
+        </div>
+        <div class="scrolly-graphic">
+          <div class="scrolly-graphic__inner">
+            <img id="vis" src="" alt="Visualization">
+          </div>
+        </div>
+      </section>
 
-  <div class="scrolly__text">
-    {{ content }}
-  </div>
-</div>
+      <!-- Closing section -->
+      <section class="scrolly-outro">
+        <div class="scrolly-outro__inner">
+          {% if page.outro %}
+            {{ page.outro | markdownify }}
+          {% endif %}
+          <a href="{{ '/' | relative_url }}" class="scrolly-outro__back">&larr; Back to home</a>
+        </div>
+      </section>
 
-<script src="https://unpkg.com/scrollama"></script>
-<script src="{{ '/assets/js/scrolly.js' | relative_url }}"></script>
+      {% if site.theme_config.appearance_toggle %}
+        {% include toggle_theme_button.html %}
+      {% endif %}
+    </main>
+
+    <script src="https://unpkg.com/scrollama"></script>
+    <script src="{{ '/assets/js/scrolly.js' | relative_url }}"></script>
+  </body>
+</html>

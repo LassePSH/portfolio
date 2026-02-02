@@ -1,22 +1,118 @@
-/* assets/css/scrolly.css */
+/* assets/css/scrolly.css — Scrollytelling styles */
 
-/* ---------- Layout ---------- */
+/* ---------- Intro Section ---------- */
+
+.scrolly-intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.scrolly-intro__inner {
+  max-width: 640px;
+}
+
+.scrolly-intro h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.15;
+  margin: 0 0 1rem;
+  color: var(--headings);
+}
+
+.scrolly-intro__subtitle {
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  margin: 0 0 3rem;
+  line-height: 1.6;
+}
+
+.scrolly-intro__scroll-hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  animation: scrolly-bounce 2s ease infinite;
+}
+
+@keyframes scrolly-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+/* ---------- Two-Column Layout ---------- */
 
 .scrolly-container {
   display: grid;
-  grid-template-columns: minmax(280px, 1fr) minmax(280px, 1fr);
-  gap: 4rem;
-  max-width: 1200px;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 0 2rem;
 }
 
-/* Text column */
+/* ---------- Text Column (left) ---------- */
+
 .scrolly-text {
   position: relative;
+  counter-reset: scrolly-step;
 }
 
-/* Sticky graphic column */
+/* ---------- Steps ---------- */
+
+.step {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem 3rem 2rem 0;
+  counter-increment: scrolly-step;
+  opacity: 0.15;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.step:last-child {
+  margin-bottom: 50vh;
+}
+
+.step:first-child {
+  margin-top: 10vh;
+}
+
+/* Step counter */
+.step::before {
+  content: counter(scrolly-step, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  opacity: 0.5;
+}
+
+/* Active step */
+.step.is-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Step content styling */
+.step p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 420px;
+  color: var(--text);
+}
+
+.step strong {
+  color: var(--headings);
+}
+
+/* ---------- Sticky Graphic (right) ---------- */
+
 .scrolly-graphic {
   position: sticky;
   top: 0;
@@ -26,56 +122,102 @@
   justify-content: center;
 }
 
-/* ---------- Steps ---------- */
-
-.step {
-  margin: 0 auto 70vh auto;
-  max-width: 38rem;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  opacity: 0.3;
-  transition: opacity 0.3s ease;
+.scrolly-graphic__inner {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.step:last-child {
-  margin-bottom: 100vh;
-}
-
-/* Active step (Scrollama adds this class) */
-.step.is-active {
-  opacity: 1;
-}
-
-/* ---------- Graphic ---------- */
 
 #vis {
-  width: 80%;
-  max-width: 400px;
-  transition: all 0.8s ease;
+  max-width: 100%;
+  max-height: 75vh;
+  object-fit: contain;
+  border-radius: 6px;
+  transition: opacity 0.6s ease, transform 0.6s ease;
   opacity: 0;
-  transform: translateY(50px) scale(1);
+  transform: scale(0.97);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
 }
 
-#vis {
-  transform: translateY(calc(var(--scroll) * 20px));
+#vis.is-visible {
+  opacity: 1;
+  transform: scale(1);
 }
 
-/* ---------- Mobile Fallback ---------- */
+/* ---------- Outro Section ---------- */
+
+.scrolly-outro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.scrolly-outro__inner {
+  max-width: 640px;
+}
+
+.scrolly-outro__inner p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.scrolly-outro__back {
+  display: inline-block;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.scrolly-outro__back:hover {
+  color: var(--headings);
+}
+
+/* ---------- Mobile / Responsive ---------- */
 
 @media (max-width: 768px) {
   .scrolly-container {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    padding: 0 1.25rem;
   }
 
   .scrolly-graphic {
     position: relative;
     height: auto;
+    min-height: 40vh;
     order: -1;
+    top: auto;
+    padding: 2rem 0;
   }
 
   .step {
-    margin-bottom: 4rem;
+    min-height: auto;
+    padding: 2rem 0;
     opacity: 1;
+    transform: none;
+  }
+
+  .step::before {
+    position: relative;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  #vis {
+    opacity: 1;
+    transform: none;
+    max-height: 50vh;
+  }
+
+  .scrolly-intro h1 {
+    font-size: 2rem;
   }
 }
