@@ -1,11 +1,11 @@
 /* Initialize particles.js on the homepage */
 particlesJS("particles-js", {
   particles: {
-    number: { value: 60, density: { enable: true, value_area: 800 } },
+    number: { value: 90, density: { enable: true, value_area: 800 } },
     color: { value: "#999999" },
     shape: { type: "circle" },
     opacity: { value: 0.3, random: true },
-    size: { value: 3, random: true },
+    size: { value: 5, random: true },
     line_linked: {
       enable: true,
       distance: 150,
