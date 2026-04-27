@@ -28,7 +28,7 @@ Subsequently, this distribution serves as a basis for sampling new weights, ther
 MultiSWAG is a deep ensemble extension of SWAG [^2]. Ensemble learning combines several individual models to obtain better generalization performance by leveraging the diversity of multiple predictions. By training multiple models and sampling from each of their weight distributions, MultiSWAG explores a broader portion of the weight space compared to traditional SWAG. This increased exploration helps capture a wider range of possible solutions, improving uncertainty estimates and reducing overfitting. As a result, MultiSWAG offers a more robust and accurate representation of model uncertainty, leading to better performance on unseen data.
 
 # The Model
-The model uses a pretranined-ELECTRA basemodel and a single dense layer with dropout and a prediction layer followed by a softmax function.
+The model uses a pretrained ELECTRA base model and a single dense layer with dropout and a prediction layer followed by a softmax function.
 The data have been split into $$60 \%$$, $$30 \%$$ and $$10 \%$$ for training, testing and validation. 
 
 ## Training
@@ -42,10 +42,10 @@ The right side shows the training histories for the SWAG approach using SGD opti
 The following figure illustrates the weight space in the final dense layer of the model(s). Ten distinct models are sampled from each of the 10 different weight spaces, resulting in an ensemble of 100 models. The colormap represents the probability of a correct prediction for the sentence: "Er de fuldstændig ravende sindsyge i R? Landsforræderi."
 
 ![probability](/images/swag/probs.png)
-*$$60 \%$$ of the models predicted the sentence as hatespeech.*
+*$$60 \%$$ of the models predicted the sentence as hate speech.*
 
 
-The results shows that multiSWAG increases the performance of the base model.
+The results show that multiSWAG increases the performance of the base model.
 
 |             | Precision | Recall | F1     |
 |-------------|-----------|--------|--------|
