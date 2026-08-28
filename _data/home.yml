@@ -4,17 +4,17 @@ project_entries:
   #   desc: Investigating the fractality of street networks with a dual graph representation of street networks
   #   highlight: WIP
 
-  - title: Walkability of Copenhagen
-    url: copenhagen-walkability
-    desc: Using network science and image models to understand urban walkability
+  # - title: Walkability of Copenhagen
+  #   url: copenhagen-walkability
+  #   desc: Using network science and image models to understand urban walkability
 
-  - title: Master Thesis - Explaining Successful Reddit Posts
-    url: master-thesis
-    desc: Predicting Awards from Textual and Network Features
+  # - title: Master Thesis - Explaining Successful Reddit Posts
+  #   url: master-thesis
+  #   desc: Predicting Awards from Textual and Network Features
     
-  - title: Classifying hate speech with multiSWAG
-    url: hate-speech
-    desc: Using a deep ensemble Bayesian approach to classify text as hate speech
+  # - title: Classifying hate speech with multiSWAG
+  #   url: hate-speech
+  #   desc: Using a deep ensemble Bayesian approach to classify text as hate speech
 
   # - title: Bachelor Thesis - The Solar Tree
   #   url:  bachelor-thesis
