@@ -28,6 +28,9 @@ footer_entries:
   - title: LinkedIn
     url: https://www.linkedin.com/in/lasse-pelle-skytte-hansen-aa068b1ba/
 
+  - title: Bluesky
+    url: https://bsky.app/profile/lasse-pelle-hansen.bsky.social
+
 # misc_entries:
 #   - title: Layout stolen/inspired by @abhiavs. Modified by me.
 #     url: https://github.com/abhinavs/moonwalk
